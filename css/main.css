@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+/* image link */
+.image_link{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.image_link .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.image_link:hover .overlay,
+.image_link:focus .overlay{
+    opacity: 1;
+}
+
+.image_link .overlay p{
+    position: absolute;
+    color: white;
+    width: 80%;
+    height: 80%;
+    /* make the text area at the center of overlay */
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* border: 1px solid red; */
+    /* make the text at the center of the text area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* box button for submit*/
+.box_button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-image: linear-gradient(to right, rgb(51,51,51) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: 0.5s ease-out;
+}
+
+.box_button:hover,
+.box_button:focus{
+    background-position: left;
+    color: white;
+}
