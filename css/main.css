@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Montserrat,sans-serif;
+}
+
 /* navigation link */
 nav{
     display: flex;
