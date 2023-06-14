@@ -10,13 +10,62 @@ h1, h2, h3, h4{
     font-family: 'Geomanist',sans-serif;
 }
 
-/* navigation link */
+/* main navigation link */
 nav{
     display: flex;
     gap: 5rem;
 }
 
-.nav_button{
+.nav_main_button{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0.25rem;
+}
+
+.nav_main_button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    /* top: 10%; */
+    left: 50%;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.nav_main_button:hover::before,
+.nav_main_button:focus::before{
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 15%;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav_dropdown:hover .dropdown_content {
+    display: block;
+}
+/* main navigation link end*/
+
+.nav_dropdown_button{
     display: inline-block;
     text-decoration: none;
     justify-content: center;
@@ -24,15 +73,16 @@ nav{
     color: black;
     position: relative;
     overflow: hidden;
-    padding-left: 15px;
+    /* padding-left: 50px; */
     transition: transform 0.3s ease-in-out;
+    /* border: 1px solid red; */
 }
 
-.nav_button::before{
+.nav_dropdown_button::before{
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 1px;
     bottom: 0;
     top: 50%;
     left: 0;
@@ -41,14 +91,14 @@ nav{
     transform: translateY(-50%);
 }
 
-.nav_button:hover::before, 
-.nav_button:focus::before {
+.nav_dropdown_button:hover::before, 
+.nav_dropdown_button:focus::before {
     width: 10px;
 }
 
-.nav_button:hover,
-.nav_button:focus{
-    transform: translateX(10px);
+.nav_dropdown_button:hover,
+.nav_dropdown_button:focus{
+    transform: translateX(15px);
 }
 
 
