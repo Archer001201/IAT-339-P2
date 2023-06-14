@@ -10,7 +10,7 @@ h1, h2, h3, h4{
     font-family: 'Geomanist',sans-serif;
 }
 
-/* main navigation link */
+/* main navigation link start*/
 nav{
     display: flex;
     gap: 5rem;
@@ -65,6 +65,8 @@ nav{
 }
 /* main navigation link end*/
 
+
+/* dropdown navigation link start*/
 .nav_dropdown_button{
     display: inline-block;
     text-decoration: none;
@@ -100,9 +102,10 @@ nav{
 .nav_dropdown_button:focus{
     transform: translateX(15px);
 }
+/* dropdown navigation link end*/
 
 
-/* image link */
+/* image link start*/
 .image_link{
     text-decoration: none;
     display: block;
@@ -144,8 +147,10 @@ nav{
     justify-content: center;
     align-items: center;
 }
+/* image link end*/
 
-/* box button for submit*/
+
+/* box button for submit start*/
 .box_button{
     width: 200px;
     height: 40px;
@@ -162,3 +167,16 @@ nav{
     background-position: left;
     color: white;
 }
+/* box button for submit end*/
+
+
+/*text input start*/
+.text_input{
+    transition: 0.3s;
+    border-width: 1px;
+}
+
+.text_input:hover, .text_input:focus{
+    box-shadow: 0px 0 3px 3px rgba(0,0,0,0.2);
+}
+/*text input end*/
