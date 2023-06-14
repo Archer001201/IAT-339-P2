@@ -1,0 +1,40 @@
+.main_container{
+    border: 1px solid blue;
+    display: flex;
+}
+
+section{
+    margin: 5rem;
+}
+
+#Checkout_Summary{
+    border: 3px solid red;
+    width: 50%;
+}
+
+#Payment_Form{
+    border: 3px solid black;
+    width: 50%;
+}
+
+.product_card{
+    display: flex;
+}
+
+.product_card img{
+    margin-right: 1rem;
+}
+
+.nav_button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+/* .edit_order{
+    display: flex;
+    gap: 5rem;
+} */
+
+
+
