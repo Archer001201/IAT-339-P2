@@ -17,6 +17,8 @@ nav{
 }
 
 .nav_main_button{
+    display: inline-block;
+    width: fit-content;
     text-decoration: none;
     color: black;
     position: relative;
@@ -179,13 +181,19 @@ nav{
 
 
 /* text input start*/
-.text_input{
+.user_input{
     transition: 0.3s;
     border-width: 1px;
+    text-align: center;
 }
 
-.text_input:hover, .text_input:focus{
+.user_input:hover, .user_input:focus{
     box-shadow: 0px 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.quantity{
+    border: 0;
+    border-bottom: 1px solid black;
 }
 /* text input end*/
 
