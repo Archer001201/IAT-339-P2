@@ -11,13 +11,27 @@
 
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/interactive_element.css" rel="stylesheet">
 
 </head>
 
 <body>
     <section id = "Navigation_Buttons">
         <h3>Navigation Button</h3>
-        <input type="submit" class="box_button" value="Defalut Button">
+        <nav>
+            <div class="nav_dropdown">
+                <a class="nav_main_button" href="pages/interactive_element.html">Interactive Elements</a>
+                <div class="dropdown_content">
+                    <a class="nav_dropdown_button" href="pages/interactive_element.html#Navigation_Buttons">Navigation Buttons</a>
+                    <a class="nav_dropdown_button" href="pages/interactive_element.html#Main_Navigation">Main Navigation</a>
+                    <a class="nav_dropdown_button" href="pages/interactive_element.html#Submit/Reset_Buttons">Submit Buttons</a>
+                    <a class="nav_dropdown_button" href="pages/interactive_element.html#Radio_Buttons">Radio Buttons</a>
+                    <a class="nav_dropdown_button" href="pages/interactive_element.html#Image_Link">Image Link</a>
+                    <a class="nav_dropdown_button" href="pages/interactive_element.html#Text_Input_Field">Text Input</a>            
+                </div>
+            </div>
+            <a class="nav_main_button" href="pages/citation.html">Citations</a>
+        </nav>
     </section>
 
     <section id="Main_Navigation">
@@ -32,6 +46,10 @@
 
     <section id="Radio_Buttons">
         <h3>Radio Buttons</h3>
+        <label for="Aqua">Aqua</label>
+        <input type="radio" id="Aqua" name="Color_Selection">
+        <label for="Coral">Coral</label>
+        <input type="radio" id="Coral" name="Color_Selection">
     </section>
 
     <section id="Image_Link">
