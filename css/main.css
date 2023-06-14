@@ -2,6 +2,48 @@
     box-sizing: border-box;
 }
 
+/* navigation link */
+nav{
+    display: flex;
+    gap: 5rem;
+}
+
+.nav_button{
+    display: inline-block;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    padding-left: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav_button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    top: 50%;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.nav_button:hover::before, 
+.nav_button:focus::before {
+    width: 10px;
+}
+
+.nav_button:hover,
+.nav_button:focus{
+    transform: translateX(10px);
+}
+
+
 /* image link */
 .image_link{
     text-decoration: none;
