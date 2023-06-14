@@ -162,14 +162,16 @@ nav{
 
 /* box button for submit start*/
 .box_button{
-    width: 200px;
-    height: 40px;
+    /* width: 200px;
+    height: 40px; */
+    padding: 0.3rem 2rem;
     border-radius: 5px;
     border: 1px solid black;
     background-image: linear-gradient(to right, rgb(51,51,51) 50%, white 50%);
     background-size: 200% 100%;
     background-position: right;
     transition: 0.5s ease-out;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .box_button:hover,
@@ -185,6 +187,7 @@ nav{
     transition: 0.3s;
     border-width: 1px;
     text-align: center;
+    font-family: 'Montserrat',sans-serif
 }
 
 .user_input:hover, .user_input:focus{
@@ -205,10 +208,32 @@ input[type="radio"]{
     height: 20px;
     border-radius: 50%;
     transition: 0.3s;
+    border: 1px solid white;
+    position: relative;
 }
 
-input[type="radio"]:checked{
+input.color_selection[type="radio"]:checked::after{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
     border: 2px solid rgb(100,100,100);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.payment_method[type="radio"]:checked::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 input[type="radio"]:hover,
@@ -223,4 +248,17 @@ input[type="radio"]:focus{
 #Coral{
     background-color: coral;
 }
+
+#Credit , #Debit{
+    background-color: white;
+}
 /* Radio Buttons end*/
+
+.vertical{
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal{
+    display: flex;
+}

@@ -63,31 +63,73 @@
             </nav>
         </header>
 
-        <div class="main_container">
+        <div class="main_container horizontal">
             <section id="Checkout_Summary">
-                <div class="product_card">
+                <div class="product_card horizontal">
                     <img src="../imgs/Dolphin-Necklace.jpg.webp" alt="CORAL Dolphin Dancing Diamond Necklace" width="150" height="200">
                     <div>
                         <p><strong>CORAL Dolphin Dancing Diamond Necklace</strong></p>
                         <p><strong>$204.00</strong></p>
                         <div class="edit_order">
-                            <div class="nav_button">
+                            <div class="nav_button vertical">
                                 <a href="#" class="nav_main_button">Edit</a>
                                 <a href="#" class="nav_main_button">Save for later</a>
                             </div>
                             <div class="quantity_input">
-                                <label for="Quantity">Quantity</label>
-                                <input type="number" id="Quantity" class="user_input quantity">
+                                <label for="Quantity_Dophin">Quantity</label>
+                                <input type="number" id="Quantity_Dophin" class="user_input quantity">
                             </div>
-                            
                         </div>
-                        
                     </div>
                 </div>
+
+                <div class="product_card horizontal">
+                  <img src="../imgs/Heart-Necklace.jpg.webp" alt="AMOUR Heart Dancing Diamond Necklace" width="150" height="200">
+                  <div>
+                      <p><strong>AMOUR Heart Dancing Diamond Necklace</strong></p>
+                      <p><strong>$194.00</strong></p>
+                      <div class="edit_order">
+                          <div class="nav_button vertical">
+                              <a href="#" class="nav_main_button">Edit</a>
+                              <a href="#" class="nav_main_button">Save for later</a>
+                          </div>
+                          <div class="quantity_input">
+                              <label for="Quantity_Heart">Quantity</label>
+                              <input type="number" id="Quantity_Heart" class="user_input quantity">
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </section>
     
             <section id="Payment_Form">
-    
+              <div class="payment_container">
+                <div class="payment_item">
+                  <input type="radio" id="Credit" name="Payment_Method" class="payment_method">
+                  <label for="Credit">Credit Card</label>
+                  <input type="radio" id="Debit" name="Payment_Method" class="payment_method">
+                  <label for="Debit">Debit Card</label>
+                </div>
+                <div class="vertical payment_item">
+                  <label for="name">Cardholder Name</label>
+                  <input type="text" id="name" class="user_input">
+                </div>
+                <div class="vertical payment_item">
+                  <label for="card_number">Card Number</label>
+                  <input type="text" id="card_number" class="user_input">
+                </div>
+                <div class="horizontal payment_item">
+                  <div class="vertical">
+                    <label for="expire_date">Expire Date</label>
+                    <input type="text" id="expire_date" class="user_input">
+                  </div>
+                  <div class="vertical">
+                    <label for="security_code">Security Code</label>
+                    <input type="text" id="security_code" class="user_input">
+                  </div>
+                </div>
+                <input type="submit" class="box_button payment_item" value="Submit">
+              </div>
             </section>
         </div>
 

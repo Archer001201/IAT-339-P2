@@ -1,24 +1,23 @@
-.main_container{
+/* .main_container{
     border: 1px solid blue;
-    display: flex;
-}
+} */
 
 section{
     margin: 5rem;
 }
 
 #Checkout_Summary{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 50%;
 }
 
 #Payment_Form{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     width: 50%;
 }
 
 .product_card{
-    display: flex;
+    margin-bottom: 1rem;
 }
 
 .product_card img{
@@ -26,8 +25,6 @@ section{
 }
 
 .nav_button{
-    display: flex;
-    flex-direction: column;
     margin-top: 3rem;
 }
 
@@ -35,6 +32,23 @@ section{
     display: flex;
     gap: 5rem;
 } */
+
+.payment_container{
+    width: 80%;
+    margin: auto;
+    padding-top: 0.5rem;
+    background-color: rgb(240, 240, 240);
+}
+
+.payment_item{
+    margin: 1.5rem 3rem;
+    /* border: 1px solid blue; */
+}
+
+.payment_container .horizontal{
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
 
 
 
