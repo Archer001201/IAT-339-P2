@@ -14,6 +14,19 @@ h1, h2, h3, h4{
 nav{
     display: flex;
     gap: 5rem;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+.nav_main{
+    display: flex;
+    width: 60%;
+    gap: 3rem;
+    justify-content: right;
+    /* border: 1px solid blue; */
 }
 
 .nav_main_button{
@@ -186,6 +199,7 @@ nav{
 .user_input{
     transition: 0.3s;
     border-width: 1px;
+    border-radius: 5px;
     text-align: center;
     font-family: 'Montserrat',sans-serif
 }
@@ -196,53 +210,25 @@ nav{
 
 .quantity{
     border: 0;
+    border-radius: 0;
     border-bottom: 1px solid black;
 }
 /* text input end*/
 
 
 /* Radio Buttons start*/
-.color_selection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 input[type="radio"]{
     appearance: none;
     width: 20px;
     height: 20px;
+    background-color: white;
     border-radius: 50%;
     transition: 0.3s;
-    border: 1px solid white;
+    border: 1px solid rgb(100,100,100);
     position: relative;
 }
 
-.color_selection_label {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; 
-}
-
-.color_selection_button:hover + .color_selection_label,
-.color_selection_button:focus + .color_selection_label,
-.color_selection_label:hover,
-.color_selection_label:focus {
-    opacity: 1;
-}
-
-input.color_selection_button[type="radio"]:checked::after{
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    border: 2px solid rgb(100,100,100);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-input.payment_method[type="radio"]:checked::after{
+input[type="radio"]:checked::after{
     content: "";
     position: absolute;
     width: 12px;
@@ -259,29 +245,6 @@ input[type="radio"]:focus{
     box-shadow: 0px 0 2px 2px rgba(0,0,0,0.2);
 }
 
-#Aqua{
-    background-color: aqua;
-}
-
-#Coral{
-    background-color: coral;
-}
-
-#Credit , #Debit{
-    background-color: white;
-}
-
-#Sliver{
-    background-color: silver;
-}
-
-#Rose_Gold{
-    background-color: rgb(236, 177, 172);
-}
-
-#Gold{
-    background-color: gold;
-}
 /* Radio Buttons end*/
 
 .vertical{
@@ -291,4 +254,50 @@ input[type="radio"]:focus{
 
 .horizontal{
     display: flex;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid rgb(100,100,100);
+    position: relative;
+}
+
+.dot:hover,
+.dot:focus{
+    box-shadow: 0px 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.change_color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.change_color p{
+    margin: 0;
+    margin-top: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.dot:hover + p,
+.dot:focus + p{
+    visibility: visible;
+    opacity: 1;
+}
+
+.silver{
+    background-color: silver;
+}
+
+.rose_gold{
+    background-color: rgb(236, 177, 172);
+}
+
+.gold{
+    background-color: gold;
 }
