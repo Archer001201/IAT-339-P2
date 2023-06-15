@@ -29,3 +29,19 @@
 input#Sliver[type="radio"]:checked > .product_image{
     background-image: url(../imgs/rolling_2.png);
 }
+
+/* Detail Description Part Style */
+
+p{
+    line-height: 1.5;
+}
+
+.product_detail_text{
+    margin: 5rem;
+    max-width: 40%;
+}
+
+.d_title{
+    border-bottom:0.02rem solid rgb(63, 63, 63);
+    margin: 0;
+}
