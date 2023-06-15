@@ -1,0 +1,31 @@
+/* *{
+    border: 1px solid red;
+} */
+
+.product_image{
+    background-image: url(../imgs/rolling_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95vw;
+    height: 45vw;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_image .horizontal{
+    margin-top: auto;
+    gap: 0.5rem;
+}
+
+.change_color{
+    align-items: center;
+}
+
+input#Sliver[type="radio"]:checked > .product_image{
+    background-image: url(../imgs/rolling_2.png);
+}
