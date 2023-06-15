@@ -1,0 +1,84 @@
+/*
+  Text based template
+  Art_assets + index(homepage) + citation
+*/
+
+h1{
+    font-size: 4rem;
+}
+
+p{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/*
+  homepage template
+*/
+
+.title{
+    margin: 5rem 15rem;
+    text-align: center;
+    border-bottom: 0.5px solid #545454;
+}
+
+.title h2{
+    font-weight:lighter;
+}
+
+.intext_link{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section_name{
+    margin: 2rem 0rem 2rem 15rem;
+    max-width: 50%;
+    min-width: 30%;font-weight: lighter;
+}
+
+.BL{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.NL{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bbi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.con_info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.content{
+    margin-left: 0;
+    margin-right: 20%;
+    margin-bottom: 3rem;
+}
+
+.short_content{
+    margin-left: 0;
+    margin-right: 37%;
+}
+
+.content a{
+    font-style: italic;
+    font-weight: bold;
+    color:#545454;
+    text-decoration: none;
+}
+
+.content a:hover, .content a:focus{
+    text-decoration: underline;
+    font-style: normal;
+}
