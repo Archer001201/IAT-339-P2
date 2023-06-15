@@ -27,7 +27,7 @@ p{
     font-weight:lighter;
 }
 
-.intext_link{
+.layout_box{
     display: flex;
     justify-content: space-around;
 }
@@ -38,20 +38,9 @@ p{
     min-width: 30%;font-weight: lighter;
 }
 
-.BL{
-    display: flex;
-    justify-content: space-around;
-}
-
-
 .NL{
     display: flex;
     justify-content: space-between;
-}
-
-.bbi{
-    display: flex;
-    justify-content: space-around;
 }
 
 .con_info{
@@ -81,4 +70,13 @@ p{
 .content a:hover, .content a:focus{
     text-decoration: underline;
     font-style: normal;
+}
+
+/*
+  Art Assets template
+*/
+
+.brand_version{
+    font-size: 5rem;
+    font-weight: lighter;
 }
