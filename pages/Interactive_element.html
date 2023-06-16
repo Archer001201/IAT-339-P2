@@ -13,6 +13,7 @@
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/interactive_element.css" rel="stylesheet">
+    <link href="../css/text_based_template.css" rel="stylesheet">
 
 </head>
 
@@ -119,53 +120,107 @@
       </nav>
     </section>
 
-    <section id="Main_Navigation">
+    <section id="Main_Navigation"  class="element">
         <h3>Main Navigation</h3>
-    </section>
-
-    <section id = "Submit/Reset_Buttons">
-        <h3>Submit/Reset_Buttons</h3>
-        <input type="submit" class="box_button" value="Submit Button">
-        <input type="reset" class="box_button" value="Reset Button">
-    </section>
-
-    <section id="Radio_Buttons">
-        <h3>Radio Buttons</h3>
-        <input type="radio" id="Credit" name="Payment_Method" class="payment_method">
-        <label for="Credit">Credit Card</label>
-        <input type="radio" id="Debit" name="Payment_Method" class="payment_method">
-        <label for="Debit">Debit Card</label>
-    </section>
-
-    <section id="Image_Link">
-        <h3>Image as a Link</h3>
-        <a href="#" class="image_link">
-          <img src="../imgs/Dolphin-Necklace.jpg.webp" alt="CORAL Dolphin Dancing Dimond Necklace" width="300" height="400">
-          <div class="overlay">
-              <p>CORAL Dolphin Dancing Dimond Necklace</p>
-          </div>
-        </a>
-      </section>
-
-    <section id = "Text_Input_Field">
-        <h3>Text Input Field</h3>
-          <form>
-            <label>First Name</label>
-            <input type = "text" class="user_input">
-            <label>Last Name</label>
-            <input type = "text" class="user_input">
-            <label>Birth Date</label>
-            <label>M/D/Y</label>
-            <input type = "number" class="user_input">
-            <input type = "number" class="user_input">
-            <input type = "number" class="user_input">
-            <label>Email</label>
-            <input type = "email" class="user_input">
-            <!-- <input type = "submit" value="Submit" class = "box_button"> -->
-          </form>
-          <label>Quantity</label>
-          <input type = "number" class="user_input quantity">
+        <div class="sample">
+          <nav>
+            <div class="nav_main">
+              <div class="nav_dropdown">
+                <a class="nav_main_button" href="#">Home</a>
+                <div class="dropdown_content">
+                    <a class="nav_dropdown_button" href="#">Events</a>
+                    <a class="nav_dropdown_button" href="#">About us</a>
+                    <a class="nav_dropdown_button" href="#"">Help</a>
+                </div>
+              </div>
+      
+              <div class="nav_dropdown">
+                <a class="nav_main_button" href="#">Shop</a>
+                <div class="dropdown_content">
+                    <a class="nav_dropdown_button" href="#">Necklace</a>
+                    <a class="nav_dropdown_button" href="#">Ring</a>
+                    <a class="nav_dropdown_button" href="#">Ear Ring</a>
+                </div>
+              </div>
+      
+              <a class="nav_main_button" href="#">Cart</a>
+      
+              <a class="nav_main_button" href="#">Account</a>
+            </div>
+              
+              <div class="bar" tabindex="0">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="dropdown_content_large">
+                  <div class="nav_dropdown">
+                    <a class="nav_main_button" href="../index.html">Text</a>
+                    <div class="dropdown_content">
+                        <a class="nav_dropdown_button" href="../index.html#In-text_link">In-text Link</a>
+                        <a class="nav_dropdown_button" href="../index.html#Bulleted_Lists">Bulleted Lists</a>
+                        <a class="nav_dropdown_button" href="../index.html#Numbered_Lists">Numbered Lists</a>
+                        <a class="nav_dropdown_button" href="../index.html#Basic_Branding_Ideas">Branding Ideas</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </nav>
         </div>
+        
+    </section>
+    <div class="long_line"></div>
+    <section id = "Submit/Reset_Buttons" class="element">
+        <h3>Submit/Reset_Buttons</h3>
+        <div class="sample">
+          <input type="submit" class="box_button" value="Submit Button">
+          <input type="reset" class="box_button" value="Reset Button">
+        </div>
+        
+    </section>
+    <div class="long_line"></div>
+    <section id="Radio_Buttons" class="element">
+        <h3>Radio Buttons</h3>
+        <div class="sample">
+          <div>
+            <input type="radio" id="Credit" name="Payment_Method" class="payment_method">
+            <label for="Credit">Credit Card</label>
+          </div>
+          <div>
+            <input type="radio" id="Debit" name="Payment_Method" class="payment_method">
+            <label for="Debit">Debit Card</label>
+          </div>
+          
+        </div>
+        
+    </section>
+    <div class="long_line"></div>
+    <section id="Image_Link" class="element">
+        <h3>Image as a Link</h3>
+        <div class="sample">
+          <a href="#" class="image_link">
+            <img src="../imgs/Dolphin-Necklace.jpg.webp" alt="CORAL Dolphin Dancing Dimond Necklace" width="300" height="400">
+            <div class="overlay">
+                <p>CORAL Dolphin Dancing Dimond Necklace</p>
+            </div>
+          </a>
+        </div>
+       
+      </section>
+      <div class="long_line"></div>
+    <section id = "Text_Input_Field" class="element">
+        <h3>Text Input Field</h3>
+        <div class="sample">
+          <div class="vertical payment_item">
+            <label for="name">Cardholder Name</label>
+            <input type="text" id="name" class="user_input">
+          </div>
+          <div class="quantity_input">
+            <label for="Quantity_Heart">Quantity</label>
+            <input type="number" id="Quantity_Heart" class="user_input quantity">
+        </div>
+        </div>
+         
+          
     </section>
 </body>
 

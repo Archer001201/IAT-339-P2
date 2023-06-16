@@ -1,0 +1,52 @@
+section{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+.sample{
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    /* position: relative; */
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+}
+
+.sample nav{
+    /* width: 40%; */
+    gap: 1.5rem;
+    justify-content: right;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.sample .nav_main{
+    width: auto;
+}
+
+.long_line{
+    width: 70%;
+    height: 1px;
+    background-color: black;
+    margin: 3rem auto;
+}
+
+@media only screen and (max-width: 655px) {
+    .sample{
+        justify-content: left;
+    }
+
+    .sample nav{
+        justify-content: left;
+    }
+
+    .sample .image_link{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* @media only screen and (max-width: 375px) {
+    .bar
+} */
