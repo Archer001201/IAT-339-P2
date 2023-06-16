@@ -159,4 +159,15 @@ li{
     height: fit-content;
 }
 
+/*
+  Citation template
+*/
 
+.cite{
+    display: block;
+    margin: 5rem 15rem;
+}
+
+.cite li{
+    margin-bottom: 5px;
+}
