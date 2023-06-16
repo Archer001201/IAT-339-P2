@@ -232,5 +232,12 @@ li{
         border-top: 0.5px solid #545454;
     }
 
+    .cite{
+        margin-left: 5%;
+        text-align: left;
+        display: block;
+        max-width: 70%;
+    }
+
 }
 
