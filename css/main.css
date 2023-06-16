@@ -13,8 +13,14 @@ h1, h2, h3, h4{
 }
 
 header{
-   padding-bottom: 4rem;
-   margin: 0 1rem;
+   padding-bottom: 3.25rem;
+   /* margin: 0 1rem; */
+   position: fixed;
+   width: 100%;
+   background-color: white;
+   top: 0;
+   /* border: 1px solid red; */
+   z-index: 1000;
 }
 
 /* main navigation link start*/
@@ -33,6 +39,7 @@ nav{
     width: 50px;
     height: 50px;
     /* border: 1px solid red; */
+    margin-left: 1rem;
 }
 
 .nav_main{
@@ -42,6 +49,7 @@ nav{
     /* justify-content: space-between; */
     justify-content: right;
     /* border: 1px solid blue; */
+    margin-right: 1rem;
 }
 
 .nav_main_button{
@@ -98,6 +106,7 @@ nav{
 .bar{
     display: none;
     position: relative;
+    margin-right: 1rem;
 }
 
 .dropdown_content_large{
@@ -381,6 +390,11 @@ input[type="radio"]:focus{
 
 .gold{
     background-color: gold;
+}
+
+.start{
+    height: 8rem;
+    /* border: 1px solid red; */
 }
 
 @media only screen and (max-width: 850px){
