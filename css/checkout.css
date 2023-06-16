@@ -1,10 +1,16 @@
-/* .main_container{
-    border: 1px solid blue;
+.main_container{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .main_container .horizontal{
+    justify-content: space-around;
 } */
 
-section{
+/* section{
     margin: 5rem;
-}
+} */
 
 #Checkout_Summary{
     /* border: 3px solid red; */
@@ -17,15 +23,20 @@ section{
 }
 
 .product_card{
-    margin-bottom: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    /* border: 1px solid red; */
 }
 
 .product_card img{
     margin-right: 1rem;
+    width: 60%;
+    height: auto;
+    box-shadow: 0px 0px 1px 0px grey;
 }
 
 .nav_button{
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 /* .edit_order{
@@ -45,9 +56,59 @@ section{
     /* border: 1px solid blue; */
 }
 
-.payment_container .horizontal{
+.payment_item + .horizontal{
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
     justify-content: space-between;
-    /* border: 1px solid black; */
+    width: auto;
+}
+
+.select_payment_method{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1350px){
+    .payment_item .vertical{
+        width: 100%;
+        /* border: 1px solid blue; */
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1385px){
+    .main_container{
+        flex-direction: column;
+    }
+
+    #Checkout_Summary{
+        width: 98%;
+        margin: auto;
+        margin-bottom: 2rem;
+        /* border: 1px solid red; */
+    }
+
+    .product_card{
+        /* margin: auto; */
+        justify-content: center;
+    }
+
+    #Payment_Form{
+        width: 98%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .horizontal{
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    .product_card img{
+        width: 100%;
+    }
 }
 
 
