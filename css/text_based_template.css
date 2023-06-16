@@ -13,6 +13,10 @@ p{
     line-height: 1.5;
 }
 
+img{
+    width: 100%;
+}
+
 /*
   homepage template
 */
@@ -91,10 +95,13 @@ p{
     margin-bottom: 5rem;
 }
 
-.logo{
+.logo_pic{
+    border: 1px solid #545454;
     margin-left: 10rem;
     margin-right: 15rem;
+    min-width: 18%;
 }
+
 
 .sample_title{
     margin-left: 10rem;
@@ -179,11 +186,11 @@ li{
 
 @media only screen and (max-width: 900px){
 
-    .title{
+    .title, .brand_version{
         display: block;
         align-content: left;
         min-width:25%;
-        border-bottom:0.5px solid #545454;
+        /* border-bottom:0.5px solid #545454; */
         margin-left: 5%;
         text-align: left;
     }
@@ -211,5 +218,18 @@ li{
         margin-left: 10rem;
         margin-left: 10%;
     }
+
+    .logo_pic, .sample_title, .sample_text, ul, .p_title{
+        margin-left: 0%;
+    }
+
+    .sec_title{
+        margin-left: 5%;
+        text-align: left;
+        display: flex;
+        max-width: 70%;
+        border-top: 0.5px solid #545454;
+    }
+
 }
 
