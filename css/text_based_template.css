@@ -39,6 +39,7 @@ p{
 }
 
 .section_name{
+    /* border: 1px solid #545454; */
     margin: 2rem 0rem 2rem 15rem;
     max-width: 50%;
     min-width: 30%;font-weight: lighter;
@@ -171,3 +172,44 @@ li{
 .cite li{
     margin-bottom: 5px;
 }
+
+/*
+  index(homepage) responsive
+*/
+
+@media only screen and (max-width: 900px){
+
+    .title{
+        display: block;
+        align-content: left;
+        min-width:25%;
+        border-bottom:0.5px solid #545454;
+        margin-left: 5%;
+        text-align: left;
+    }
+
+    .section_name{
+        margin-left: 0;
+        align-content: left;
+        margin-left: 0%;
+    }
+
+    .layout_box{
+        display: block;
+        margin-left: 10rem;
+        margin-left: 10%;
+    }
+
+    .NL{
+        display: block;
+        margin-left: 10rem;
+        margin-left: 10%;
+    }
+
+    .con_info{
+        display: block;
+        margin-left: 10rem;
+        margin-left: 10%;
+    }
+}
+
