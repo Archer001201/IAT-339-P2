@@ -32,6 +32,11 @@ section{
     margin: 3rem auto;
 }
 
+.sample .dropdown_content_large{
+    width: 35vw;
+    border: 1px solid red;
+}
+
 @media only screen and (max-width: 655px) {
     .sample{
         justify-content: left;
@@ -44,6 +49,11 @@ section{
     .sample .image_link{
         width: 100%;
         height: auto;
+    }
+
+    .sample .dropdown_content_large{
+        left: 0;
+        flex-direction: column;
     }
 }
 
