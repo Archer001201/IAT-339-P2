@@ -143,22 +143,20 @@ li{
     text-align: center;
 }
 
-.direc_img{
-    border:1px solid black;
+.img_layout{
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
 }
 
 .imge{
-    border:1px solid red;
-    width: 10%;
-    /* min-width: 20%; */
-    height: auto;
-    gap: 1rem;
-    /* margin: auto; */
-    
+    width: 30%;
+    height: fit-content;
 }
 
 
