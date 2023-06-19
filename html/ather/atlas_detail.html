@@ -1,28 +1,31 @@
 <!DOCTYPE html>
+
+<!-- combined_elements -->
+
 <html>
+    <head>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ather Home</title>
-
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Product Details</title>
+    
+        <link href="../../css/normalize.css" rel="stylesheet">
+        <link href="../../css/main.css" rel="stylesheet">
+        <link href="../../css/fonts.css" rel="stylesheet">
+        <link href="../../css/product_detail.css" rel="stylesheet">
+        
     
     
+      </head>
 
-  </head>
-
-  <body>
-    <header>
-        <nav>
-            <a href="#" class="header_logo"><img src="../../imgs/logo.png" alt="lgo" width="50" height="50"></a>
+      <body>
+        <header>
+          <nav>
+            <a href="../../index.html" class="header_logo"><img src="../../imgs/logo.png" alt="lgo" width="50" height="50"></a>
             
             <div class="nav_main">
               <div class="nav_dropdown">
-                <a class="nav_main_button" href="#">home</a>
+                <a class="nav_main_button" href="../../index.html">home</a>
                 <!-- <div class="dropdown_content">
                     <a class="nav_dropdown_button" href="../index.html#In-text_link">In-text Link</a>
                     <a class="nav_dropdown_button" href="../index.html#Bulleted_Lists">Bulleted Lists</a>
@@ -32,7 +35,7 @@
               </div>
       
               <div class="nav_dropdown">
-                <a class="nav_main_button" href="html/ather/all_listing.html">products</a>
+                <a class="nav_main_button" href="../ather/all_listing.html">products</a>
                 <div class="dropdown_content">
                     <a class="nav_dropdown_button">necklace</a>
                     <a class="nav_dropdown_button">bracelet</a>
@@ -64,9 +67,9 @@
               <div class="line"></div>
               <div class="line"></div>
               <div class="dropdown_content_large">
-                <a class="nav_main_button" href="#">home</a>
+                <a class="nav_main_button" href="../../index.html">home</a>
                 <div class="nav_dropdown">
-                  <a class="nav_main_button" href="html/ather/all_listing.html">products</a>
+                  <a class="nav_main_button" href="../ather/all_listing.html">products</a>
                   <div class="dropdown_content">
                       <a class="nav_dropdown_button" href="#">necklace</a>
                       <a class="nav_dropdown_button" href="#">bracelet</a>
@@ -85,10 +88,54 @@
                 <a class="nav_main_button" href="#">favorites</a>
 
                 
-                <a class="nav_main_button" href="html/ather/about.html">about us</a>
+                <a class="nav_main_button" href="#">about us</a>
               </div>
             </div>
           </nav>
-    </header>
-  </body>
+        </header>
+        <div class="start"></div>
+        <section>
+          <div class="product_image">
+            <img src="../../imgs/rolling_1.png" alt="Rolling" width="1400" height="535">
+            <div class="horizontal">
+              <div class="change_color">
+                <div class="dot silver"></div>
+                <p>Sliver</p>
+              </div>
+              <div class="change_color">
+                <div class="dot rose_gold"></div>
+                <p>Rose Gold</p>
+              </div>
+              <div class="change_color">
+                <div class="dot gold"></div>
+                <p>Gold</p>
+              </div>
+            </div>      
+          </div>
+        </section>
+
+        <section class="product_detail_text">
+          <div class = "d_title">
+            <h3>rolling</h3>
+            <h3>$194.00</h3>
+          </div>
+          <p>
+            Aether's Rolling necklace is part of their single-item collection and showcases a circular design that emanates simplicity and elegance. 
+            It is available in three timeless colors: gold, silver, and rose gold.
+          </p>
+
+          <p>
+            Inspired by the fluidity and cycles of the natural world, the Rolling necklace embodies the continuous journey of life. 
+            The circular shape represents harmony and balance, while the carefully set diamonds reflect radiant brilliance from various angles. 
+            Even in the darkest moments, a glimmer of light can unveil its captivating beauty.
+            As a refined piece of jewelry, Aether's Rolling necklace symbolizes the philosophy of embracing nature and life. 
+          </p>
+
+          <input type="submit" class="box_button" value="Add to cart">
+        </section>
+
+       
+
+      </body>
+
 </html>
