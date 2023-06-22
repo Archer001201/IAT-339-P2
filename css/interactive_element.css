@@ -2,6 +2,7 @@ section{
     width: 70%;
     margin: auto;
     margin-bottom: 10rem;
+    padding-top: 8rem;
 }
 
 .sample{
@@ -29,7 +30,7 @@ section{
     width: 70%;
     height: 1px;
     background-color: black;
-    margin: 3rem auto;
+    margin: 5rem auto;
 }
 
 .sample .dropdown_content_large{
