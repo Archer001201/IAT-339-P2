@@ -18,11 +18,13 @@ header{
    position: fixed;
    width: 100%;
    max-width: 1500px;
+   height: 5rem;
    margin: auto;
    background-color: white;
    top: 0;
    /* border: 1px solid red; */
    z-index: 1000;
+   border: 1px solid red;
 }
 
 /* main part style */
@@ -111,7 +113,7 @@ nav{
 .nav_main{
     display: flex;
     /* width: 80%; */
-    gap: 1rem;
+    gap: 2.5rem;
     /* justify-content: space-between; */
     /* justify-content: right; */
     /* border: 1px solid blue; */
@@ -185,17 +187,17 @@ nav{
     position: absolute;
     /* background-color: white; */
     background-color: transparent;
-    width: 90vw;
+    width: 86vw;
     padding-bottom: 2rem;
     top: 100%;
-    right: 0;
+    left: 0;
     padding-top: 0.75rem;
     /* box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2); */
     z-index: 1;
     transform: translateY(-10px);
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-    /* border: 1px solid red; */
+    border: 1px solid blue;
 }
 
 .bar:hover .dropdown_content_large,
@@ -473,7 +475,7 @@ input[type="radio"]:focus{
 }
 
 @media only screen and (max-width: 850px){
-    .nav_main{
+    .fade{
         display: none;
     }
 
