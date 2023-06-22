@@ -25,6 +25,44 @@ header{
    z-index: 1000;
 }
 
+/* main part style */
+.home_page{
+    margin-top: 10rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap:none;
+}
+
+.home_page h1{
+    font-family: 'Cinzel',sans-serif;
+    font-size: 2.5rem;
+    font-style: light;
+}
+
+.home_page img{
+    width: 60%;
+    height: auto;
+}
+
+.home_pic{
+    margin-left: 17rem;
+    margin-right: 0rem;
+}
+
+.small_link{
+    margin-top: 2rem;
+}
+
+.small_link a{
+    margin-top: 1.5rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
 footer{
     width: 100%;
     max-width: 1500px;
