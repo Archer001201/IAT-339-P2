@@ -1,2 +1,97 @@
 /* css style template for about us */
 
+.img{
+    width = 100%;
+    height:auto;
+}
+
+.whole{
+    /* border: 1px solid rgb(207, 33, 85); */
+}
+
+.this_title{
+    width: fit-content;
+    margin:auto;
+    margin-top: 10rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    /* border: 1px solid rgb(53, 2, 17); */
+}
+
+.sum{
+    margin: 0 8rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    min-width: fit-content;
+    /* border: 1px solid rgb(25, 98, 7); */
+}
+
+.sum_text{
+    /* border: 1px solid blue; */
+}
+
+.sum_pic{
+    min-width: 45%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.sum_text a{
+    font-style: italic;
+    font-weight: bold;
+    color:#545454;
+    text-decoration: none;
+}
+
+.sum_text a:hover, .sum_text a:focus{
+    text-decoration: underline;
+    font-style: normal;
+}
+
+.audience_text{
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+
+.designer{
+    margin-left: 8rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+}
+
+.designer img{
+    width: 150px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px){
+    .sum{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .sum_pic{
+        /* width: 280px; */
+        height:auto;
+    }
+
+    .sum_text{
+       width: 100%;
+    }
+
+    .audience_text{
+        text-align: center;
+    }
+
+}
