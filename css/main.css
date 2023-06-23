@@ -30,18 +30,21 @@ header{
 
 /* main part style */
 .home_page{
+    margin: auto;
     margin-top: 10rem;
-    margin-left: 17rem;
-    margin-right: 17rem;
     display: flex;
     justify-content: space-evenly;
     gap:none;
+    min-width: fit-content;
+    max-width: 1000px;
+    /* border: 1px solid red; */
 }
 
 .home_page h1{
     font-family: 'Cinzel',sans-serif;
     font-size: 2.5rem;
     font-style: light;
+    /* border: 1px solid black; */
 }
 
 .home_page img{
@@ -49,7 +52,7 @@ header{
     margin-left: 3rem;
     width: 250px;
     height: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 
@@ -183,7 +186,7 @@ nav{
     margin: 5px;
     height: 1px;
     background-color: black;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .bar{
@@ -504,23 +507,6 @@ input[type="radio"]:focus{
     /* border: 1px solid red; */
 }
 
-
-@media only screen and (max-width: 1000px){
-    .brand_name{
-        display: flex;
-    }
-
-    .home_page{
-        flex-wrap: wrap;
-    }
-
-    .home_page img{
-        min-width: 100px;
-        margin: auto;
-        align-content: center;
-    }   
-}
-
 @media only screen and (max-width: 850px){
     .fade{
         display: none;
@@ -534,10 +520,20 @@ input[type="radio"]:focus{
     }  
 }
 
-@media only screen and (max-width: 550px){
-    .home_page{
-        margin-left: auto;
-        margin-right: auto;
+@media only screen and (max-width: 665px){
+    .brand_name{
+        display: flex;
+        width: fit-content;
+        margin: auto;
     }
+
+    .home_page img{
+        margin: auto;
+    }
+
+    .home_page{
+        flex-direction: column;
+    }  
 }
+
 
