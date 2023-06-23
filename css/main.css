@@ -101,6 +101,15 @@ footer{
     margin: 1rem 2rem;
 }
 
+/* .footer_item a{
+    color: black;
+    text-decoration: none;
+} */
+
+.ppp{
+    margin-bottom: 3rem;
+}
+
 .dividing_line{
     height: 1px;
     width: 100%;
