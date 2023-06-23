@@ -45,15 +45,26 @@ header{
 }
 
 .home_page img{
-    width: 60%;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 250px;
     height: auto;
+    border: 2px solid red;
 }
 
-.home_pic{
-    margin-left: 17rem;
-    margin-right: 0rem;
+
+/* .home_pic{ */
+    /* background-image: url(../../imgs/home.gif );
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* margin-left: 25%;
+    margin-right: 5%;
     margin-top: 0rem;
-}
+    width: 150px; */
+    /* height: auto; */
+    /* min-width: 100px; */
+    /* border: 2px solid rgb(68, 68, 144); */
+/* } */
 
 .small_link{
     margin-top: 2rem;
@@ -65,6 +76,7 @@ header{
     text-align: center;
     text-decoration: none;
     color: black;
+    min-width: 25%;
 }
 
 footer{
@@ -492,6 +504,23 @@ input[type="radio"]:focus{
     /* border: 1px solid red; */
 }
 
+
+@media only screen and (max-width: 1000px){
+    .brand_name{
+        display: flex;
+    }
+
+    .home_page{
+        flex-wrap: wrap;
+    }
+
+    .home_page img{
+        min-width: 100px;
+        margin: auto;
+        align-content: center;
+    }   
+}
+
 @media only screen and (max-width: 850px){
     .fade{
         display: none;
@@ -502,5 +531,13 @@ input[type="radio"]:focus{
         padding: 12.5px 0;
         /* border: 1px solid red; */
         margin-left: 1rem;
+    }  
+}
+
+@media only screen and (max-width: 550px){
+    .home_page{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
