@@ -55,6 +55,10 @@ header{
     /* border: 2px solid red; */
 }
 
+video{
+    margin-left: 3rem;
+    /* border: 2px solid red; */
+}
 
 /* .home_pic{ */
     /* background-image: url(../../imgs/home.gif );
@@ -536,7 +540,7 @@ input[type="radio"]:focus{
         margin: auto;
     }
 
-    .home_page img{
+    video{
         margin: auto;
     }
 
