@@ -14,19 +14,27 @@ h1, h2, h3, h4{
 }
 
 header{
-   padding-bottom: 3.25rem;
-   /* margin: 0 1rem; */
-   position: fixed;
-   width: 100%;
+   /* padding-bottom: 3.25rem; */
+   /* position: fixed; */
+   /* width: 100%; */
    max-width: 1500px;
-   /* height: 6rem; */
-   margin: auto;
-   background-color: white;
-   top: 0;
-   /* border: 1px solid red; */
+   /* margin: auto; */
+   background-color: transparent;
+   /* top: 0; */
    z-index: 1000;
-   /* border: 1px solid red; */
 }
+
+#myHeader {
+    position: fixed;  /* 让header固定在顶部 */
+    top: 0;           /* 初始位置在顶部 */
+    transition: top 0.3s;  /* 添加过渡效果 */
+    width: 100%;      /* 宽度设置为100% */
+}
+
+#myHeader.hide {
+    top: -100px;  /* 设置为你header的高度的负值 */
+}
+
 
 /* main part style */
 .home_page{
