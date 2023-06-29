@@ -9,6 +9,12 @@ body{
     margin: auto;
 }
 
+.body_container{
+    max-width: 1500px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
 h1, h2, h3, h4{
     font-family: 'Geomanist',sans-serif;
 }
@@ -114,13 +120,15 @@ header{
 footer{
     background-color: #EBEBEB;
     width: 100%;
-    max-width: 1500px;
-    margin: auto;
+    
+    
     margin-top: 3rem;
     padding: 0 2rem;
 }
 
 .footer_content{
+    max-width: 1500px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -140,11 +148,11 @@ footer{
     margin-bottom: 3rem;
 }
 
-.dividing_line{
+/* .dividing_line{
     height: 1px;
     width: 100%;
     background-color: black;
-}
+} */
 
 /* main navigation link start*/
 nav{
@@ -539,11 +547,6 @@ input[type="radio"]:focus{
 
 .gold{
     background-color: gold;
-}
-
-.start{
-    height: 8rem;
-    /* border: 1px solid red; */
 }
 
 @media only screen and (max-width: 850px){
