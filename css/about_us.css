@@ -10,10 +10,6 @@
     height: 15px;
 } */
 
-.whole{
-    /* border: 1px solid rgb(207, 33, 85); */
-}
-
 .this_title{
     width: fit-content;
     margin:auto;
@@ -24,20 +20,19 @@
 }
 
 .sum{
-    margin: 0 8rem;
+    max-width: 80%;
     display: flex;
     justify-content: space-around;
     gap: 5rem;
-    min-width: fit-content;
+    margin: auto;
+    /* min-width: fit-content; */
     /* border: 1px solid rgb(25, 98, 7); */
 }
 
-.sum_text{
-    /* border: 1px solid blue; */
-}
-
 .sum_pic{
-    min-width: 45%;
+    /* display: block; */
+    width: 45%;
+    /* height:auto; */
 }
 
 p {
@@ -64,8 +59,8 @@ p {
 }
 
 .designer{
-    margin-left: 8rem;
-    margin-right: 5rem;
+    max-width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     gap: 2rem;
@@ -75,21 +70,24 @@ p {
 
 .designer img{
     width: 150px;
-    height: auto;
+    height: 220px;
 }
 
 @media only screen and (max-width: 1200px){
     .sum{
-        display: block;
+        flex-direction: column;
+    }
+
+    .sum_pic{
+        width: 100%;
     }
 
 }
 
 @media only screen and (max-width: 500px){
-    .sum_pic{
-        /* width: 280px; */
+    /* .sum_pic{
         height:auto;
-    }
+    } */
 
     .sum_text{
        width: 100%;
