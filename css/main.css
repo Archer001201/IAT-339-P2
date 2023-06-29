@@ -120,26 +120,73 @@ header{
     margin-top: 3rem;
     display:flex;
     justify-content:space-between;
-    border:1px solid blue;
+    /* border:1px solid blue; */
 }
 
+
 .new_text_content{
+    display: block;
+    align-items: center;
     text-align: center;
+    margin: auto;
+}
+
+.new_text_content img{
+    width: 60%;
+    height: auto;
+    margin-bottom: 1rem;
+    /* border:1px solid blue; */
+}
+
+.home_content_button{
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.change_page_dot{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    position: absolute;
+    left: 22%;
+}
+
+.detail_clusters{
+    margin-top: 4rem;
 }
 
 .half_hundred_picture{
     width:50%;
     height: auto;
-    border:1px solid rgb(173, 14, 0);
+    /* border:1px solid rgb(173, 14, 0); */
 }
 
+.newsletter{
+    margin-top: 4rem;
+    text-align: center;
+}
 
+.input_plus_button{
+    display: flex;
+    gap:1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .user_input{
+    height: 30px;
+    /* border:1px solid rgb(17, 0, 173); */
+}
+
+.newsletter .user_input::placeholder{
+    font-size: 14px;
+    padding-left: 0.3rem;
+  }
 
 footer{
     background-color: #EBEBEB;
     width: 100%;
-    
-    
     margin-top: 3rem;
     padding: 0 2rem;
 }
@@ -479,6 +526,7 @@ nav{
 
 .user_input:hover, .user_input:focus{
     box-shadow: 0px 0 3px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 
 .quantity{
@@ -547,9 +595,22 @@ input[type="radio"]:focus{
     position: relative;
 }
 
-.dot:hover,
-.dot:focus{
+.dot_smaller{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    background-color: transparent;
+}
+
+.dot:hover,.dot:focus{
     box-shadow: 0px 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.dot_smaller:hover, .dot_smaller:focus{
+    background-color: black;
 }
 
 .change_color{
