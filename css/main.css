@@ -619,7 +619,7 @@ input[type="radio"]:focus{
     height: 20px;
     border-radius: 50%;
     transition: 0.3s;
-    border: 1px solid rgb(100,100,100);
+    border: 1px outset rgb(199, 199, 199);
     position: relative;
 }
 
