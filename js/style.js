@@ -27,6 +27,46 @@ if (window.scrollY !== 0) {
   header.classList.add('hide');
 }
 
+// --------------------------------- //
+
+let bar = document.querySelector('.bar');
+let dropdown = document.querySelector('.dropdown_content_large');
+
+let isDropdownVisible = false;
+
+bar.addEventListener('mouseenter', function() {
+    bar.classList.add('hovered');
+});
+
+bar.addEventListener('click', function(event) {
+    event.stopPropagation();
+    isDropdownVisible = !isDropdownVisible;
+    
+    if (isDropdownVisible) {
+        // dropdown.style.visibility = 'visible';
+        dropdown.style.transform = 'translateY(0)';
+        dropdown.style.opacity = '1';
+    } else {
+        // dropdown.style.visibility = 'hidden';
+        dropdown.style.transform = 'translateY(-10px)';
+        dropdown.style.opacity = '0';
+        bar.classList.remove('hovered');
+    }
+});
+
+document.addEventListener('click', function(event) {
+    if (isDropdownVisible && !bar.contains(event.target) && !dropdown.contains(event.target)) {
+        isDropdownVisible = false;
+        // dropdown.style.visibility = 'hidden';
+        dropdown.style.transform = 'translateY(-10px)';
+        dropdown.style.opacity = '0';
+    }
+});
+
+
+
+
+
 
 
   
