@@ -63,6 +63,23 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// --------------------------------- //
+let cart = document.querySelector('.cart_summary');
+let slideWindow = document.querySelector('.slide_window');
+let isSlideVisible = false;
+
+cart.addEventListener('click', function(event){
+    event.stopPropagation();
+    isSlideVisible = !isSlideVisible;
+
+    if(isSlideVisible){
+        slideWindow.style.transform = 'translateX(0)';
+        slideWindow.style.opacity = '1';
+    }else{
+        slideWindow.style.transform = 'translateX(10px)';
+        slideWindow.style.opacity = '0';
+    }
+})
 
 
 

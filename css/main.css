@@ -360,6 +360,21 @@ nav{
     /* border: 1px solid blue; */
 }
 
+.slide_window{
+    border: 1px solid red;
+    background-color: white;
+    /* background-color: transparent; */
+    width: 500px;
+    height: 99vh;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(10px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
 /* .bar:hover + .dropdown_content_large,
 .bar:focus + .dropdown_content_large{
     visibility: visible;

@@ -10,6 +10,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/checkout.css">
   
   
 
@@ -61,8 +62,8 @@
 
       <div class="nav_main right_align right_margin">
         <a href="#"><img class="hover_transparent" src="imgs/heart.png" alt="favorites" width="15" height="15"></a>
-        <a href="html/ather/checkout.html"><img class="hover_transparent" src="imgs/cart.png" alt="cart" width="15"
-            height="15"></a>
+        <div class="cart_summary"><img class="hover_transparent" src="imgs/cart.png" alt="cart" width="15"
+            height="15"></div>
         <a href="#"><img class="hover_transparent" src="imgs/account.png" alt="account" width="15" height="15"></a>
       </div>
     </nav>
@@ -90,6 +91,47 @@
 
 
       <a class="nav_main_button" href="html/ather/about.html">about us</a>
+    </div>
+
+    <div class="slide_window">
+      <h3>Your Cart</h3>
+      <section id="Checkout_Summary">
+        <div class="product_card horizontal">
+          <img src="imgs/Group_15_2.png" alt="AMOUR Heart Dancing Diamond Necklace" width="400" height="235">
+          <div>
+              <p><strong>AMOUR</strong></p>
+              <p><strong>$194.00</strong></p>
+              <div class="edit_order">
+                  <div class="nav_button vertical">
+                      <a href="#" class="nav_main_button">Edit</a>
+                      <a href="#" class="nav_main_button">Save for later</a>
+                  </div>
+                  <div class="quantity_input">
+                      <label for="Quantity_Heart">Quantity</label>
+                      <input type="number" id="Quantity_Heart" class="user_input quantity">
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="product_card horizontal">
+            <img src="imgs/Group_15_2.png" alt="AMOUR Heart Dancing Diamond Necklace" width="400" height="235">
+            <div>
+                <p><strong>AMOUR</strong></p>
+                <p><strong>$194.00</strong></p>
+                <div class="edit_order">
+                    <div class="nav_button vertical">
+                        <a href="#" class="nav_main_button">Edit</a>
+                        <a href="#" class="nav_main_button">Save for later</a>
+                    </div>
+                    <div class="quantity_input">
+                        <label for="Quantity_Heart">Quantity</label>
+                        <input type="number" id="Quantity_Heart" class="user_input quantity">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
     </div>
 
   </header>
@@ -149,7 +191,7 @@
   <div class = "new_text_content">
     <p>NEW RELEASE</p>
     <h3>Seraphic Springs</h3>
-    <img src="/imgs/Seraphic.png" alt="Seraphic Springs">
+    <img src="imgs/Seraphic.png" alt="Seraphic Springs">
     <div class = "change_page_dot">
         <div class="dot_smaller"></div>
         <div class="dot_smaller"></div>
