@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Montserrat',sans-serif;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     margin: auto;
 }
 
@@ -14,25 +14,25 @@ h1, h2, h3, h4{
 }
 
 header{
-   /* padding-bottom: 3.25rem; */
-   /* position: fixed; */
-   /* width: 100%; */
-   max-width: 1500px;
-   /* margin: auto; */
-   background-color: transparent;
-   /* top: 0; */
-   z-index: 1000;
+    width: 100%;
+   background-color: white;
+}
+
+.nav_container{
+    max-width: 1500px;
+    padding-bottom: 1rem;
 }
 
 #myHeader {
-    position: fixed;  /* 让header固定在顶部 */
-    top: 0;           /* 初始位置在顶部 */
-    transition: top 0.3s;  /* 添加过渡效果 */
-    width: 100%;      /* 宽度设置为100% */
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    width: 100%;
+    z-index: 1000;
 }
 
 #myHeader.hide {
-    top: -100px;  /* 设置为你header的高度的负值 */
+    top: -100px;
 }
 
 
@@ -245,7 +245,7 @@ nav{
     background-color: transparent;
     width: 85vw;
     padding-bottom: 2rem;
-    top: 100%;
+    top: 70%;
     left: 0;
     padding-top: 0.75rem;
     /* box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2); */
