@@ -21,67 +21,115 @@
       <body>
         <header id="myHeader">
           <nav class="nav_container">
-              <div class="bar" tabindex="0">
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="dropdown_content_large">
-                    <a class="nav_main_button" href="../../index.html">home</a>
-                    <div class="nav_dropdown">
-                      <a class="nav_main_button" href="../ather/all_listing.html">products</a>
-                      <div class="dropdown_content">
-                          <a class="nav_dropdown_button" href="#">necklace</a>
-                          <a class="nav_dropdown_button" href="#">bracelet</a>
-                          <a class="nav_dropdown_button" href="#">ring</a>
-                          <a class="nav_dropdown_button" href="#">earring</a>           
-                      </div>
-                    </div>
-            
-                    <div class="nav_dropdown">
-                      <a class="nav_main_button" href="#">news</a>
-                      <div class="dropdown_content">
-                        <a class="nav_dropdown_button" href="#">event</a>
-                      </div>
-                    </div>
-            
-                    <a class="nav_main_button" href="#">favorites</a>
-    
-                    
-                    <a class="nav_main_button" href="../ather/about.html">about us</a>
-                  </div>
+            <div class="bar" tabindex="0">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+      
+            <a href="../../index.html" class="header_logo fade"><img class="hover_transparent" src="../../imgs/logo.png" alt="lgo" width="50"
+                height="50"></a>
+      
+            <div class="nav_main fade center_align no_condense">
+              <a class="nav_main_button" href="../../index.html">home</a>
+      
+              <div class="nav_dropdown" id="products_nav">
+                <div class="nav_main_button">products</div>
+                <div class="dropdown_content" id="products_dropdown">
+                  <a class="nav_dropdown_button" href="../ather/all_listing.html">necklace</a>
+                  <a class="nav_dropdown_button">bracelet</a>
+                  <a class="nav_dropdown_button">ring</a>
+                  <a class="nav_dropdown_button">earring</a>
                 </div>
-                
-              <a href="../../index.html" class="header_logo fade"><img src="../../imgs/logo.png" alt="lgo" width="50" height="50"></a>
-              
-              <div class="nav_main fade">
-                <a class="nav_main_button" href="../../index.html">home</a>
-                <div class="nav_dropdown">
-                  <a class="nav_main_button" href="../ather/all_listing.html">products</a>
-                  <div class="dropdown_content">
-                      <a class="nav_dropdown_button">necklace</a>
-                      <a class="nav_dropdown_button">bracelet</a>
-                      <a class="nav_dropdown_button">ring</a>
-                      <a class="nav_dropdown_button">earring</a>        
-                  </div>
-                </div>
-        
-                <div class="nav_dropdown">
-                  <a class="nav_main_button">news</a>
-                  <div class="dropdown_content">
-                    <a class="nav_dropdown_button" >event</a>
-                  </div>
-                </div>
-        
-                <a class="nav_main_button" href="../ather/about.html" >about us</a>
               </div>
-  
-              <div class="nav_main">
-                <a class="nav_main_button" href="#"><img src="../../imgs/heart.png" alt="favorites" width="15" height="15"></a>
-                <a class="nav_main_button" href="../ather/checkout.html"><img src="../../imgs/cart.png" alt="cart" width="15" height="15"></a>
-                <a class="nav_main_button" href="#"><img src="../../imgs/account.png" alt="account" width="15" height="15"></a>
+      
+              <div class="nav_dropdown" id="news_nav">
+                <div class="nav_main_button">news</div>
+                <div class="dropdown_content" id="news_dropdown">
+                  <a class="nav_dropdown_button">event</a>
+                </div>
               </div>
-            </nav>
-      </header>
+      
+              <a class="nav_main_button" href="../ather/about.html">about us</a>
+            </div>
+      
+            <div class="nav_main right_align right_margin">
+              <a href="#"><img class="hover_transparent" src="../../imgs/heart.png" alt="favorites" width="15" height="15"></a>
+              <div class="cart_summary"><img class="hover_transparent" src="../../imgs/cart.png" alt="cart" width="15"
+                  height="15"></div>
+              <a href="#"><img class="hover_transparent" src="../../imgs/account.png" alt="account" width="15" height="15"></a>
+            </div>
+          </nav>
+      
+          <div class="dropdown_content_large">
+            <a class="nav_main_button" href="../../index.html">home</a>
+      
+            <div class="nav_dropdown" id="products_nav_dpd">
+              <div class="nav_main_button">products</div>
+              <div class="dropdown_content" id="products_dropdown_dpd">
+                <a class="nav_dropdown_button" href="../ather/all_listing.html">necklace</a>
+                <a class="nav_dropdown_button" href="#">bracelet</a>
+                <a class="nav_dropdown_button" href="#">ring</a>
+                <a class="nav_dropdown_button" href="#">earring</a>
+              </div>
+            </div>
+      
+            <div class="nav_dropdown" id="news_nav_dpd">
+              <div class="nav_main_button" href="#">news</div>
+              <div class="dropdown_content" id="news_dropdown_dpd">
+                <a class="nav_dropdown_button" href="#">event</a>
+              </div>
+            </div>
+      
+            <a class="nav_main_button" href="#">favorites</a>
+      
+      
+            <a class="nav_main_button" href="../ather/about.html">about us</a>
+          </div>
+      
+          <div class="slide_window">
+            <h3>Your Cart</h3>
+            <section id="Checkout_Summary">
+              <div class="product_card horizontal">
+                <img src="../../imgs/Group_15_2.png" alt="AMOUR Heart Dancing Diamond Necklace" width="400" height="235">
+                <div>
+                    <p><strong>AMOUR</strong></p>
+                    <p><strong>$194.00</strong></p>
+                    <div class="edit_order">
+                        <div class="nav_button vertical">
+                            <a href="#" class="nav_main_button">Edit</a>
+                            <a href="#" class="nav_main_button">Save for later</a>
+                        </div>
+                        <div class="quantity_input">
+                            <label for="Quantity_Heart">Quantity</label>
+                            <input type="number" id="Quantity_Heart" class="user_input quantity">
+                        </div>
+                    </div>
+                </div>
+              </div>
+      
+              <div class="product_card horizontal">
+                  <img src="../../imgs/Group_15_2.png" alt="AMOUR Heart Dancing Diamond Necklace" width="400" height="235">
+                  <div>
+                      <p><strong>AMOUR</strong></p>
+                      <p><strong>$194.00</strong></p>
+                      <div class="edit_order">
+                          <div class="nav_button vertical">
+                              <a href="#" class="nav_main_button">Edit</a>
+                              <a href="#" class="nav_main_button">Save for later</a>
+                          </div>
+                          <div class="quantity_input">
+                              <label for="Quantity_Heart">Quantity</label>
+                              <input type="number" id="Quantity_Heart" class="user_input quantity">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            <a href="../ather/checkout.html" class="box_button">checkout</a>
+          </div>
+          
+        </header>
         <!-- <div class="start"></div> -->
         
           <section>
