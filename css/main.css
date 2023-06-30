@@ -373,10 +373,10 @@ nav{
 }
 
 .slide_window{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: white;
     /* background-color: transparent; */
-    width: 500px;
+    width: 320px;
     height: 99vh;
     position: absolute;
     top: 100%;
@@ -385,6 +385,22 @@ nav{
     transform: translateX(10px);
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide_window a{
+    text-decoration: none;
+}
+
+.cart_product.horizontal{
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.cart_product img{
+    width: 100%;
 }
 
 /* .bar:hover + .dropdown_content_large,
