@@ -83,7 +83,7 @@ cart.addEventListener('click', function(event){
     }else{
         slideWindow.style.transform = 'translateX(10px)';
         slideWindow.style.opacity = '0';
-        slideWindow.style.zIndex = '1000';
+        slideWindow.style.zIndex = '0';
     }
 })
 
@@ -153,6 +153,74 @@ document.addEventListener('click', function(event) {
       newsDropdown.style.transform = 'translateY(-10px)';
       newsDropdown.style.opacity = '0';
       newsDropdown.style.zIndex = "1000";
+  }
+});
+
+// --------------------------------- //
+
+let productsNavDpd = document.getElementById('products_nav_dpd');
+let productsDropdownDpd = document.getElementById('products_dropdown_dpd');
+
+let isProductsDropdownDpdVisible = false;
+
+productsNavDpd.addEventListener('click', function(event){
+  event.stopPropagation();
+  isProductsDropdownDpdVisible = !isProductsDropdownDpdVisible;
+
+  if(isProductsDropdownDpdVisible){
+    // productsDropdown.style.display = 'block';
+    productsDropdownDpd.style.transform = 'translateY(0)';
+    productsDropdownDpd.style.opacity = '1';
+    productsDropdownDpd.style.zIndex = "1100";
+  }else{
+    // productsDropdown.style.display = 'none';
+    productsDropdownDpd.style.transform = 'translateY(-10px)';
+    productsDropdownDpd.style.opacity = '0';
+    productsDropdownDpd.style.zIndex = "1100";
+  }
+})
+
+document.addEventListener('click', function(event) {
+  if (isProductsDropdownVisibleDpd && !productsNavDpd.contains(event.target) && !productsDropdownDpd.contains(event.target)) {
+      isProductsDropdownVisibleDpd = false;
+      // dropdown.style.visibility = 'hidden';
+      productsDropdownDpd.style.transform = 'translateY(-10px)';
+      productsDropdownDpd.style.opacity = '0';
+      productsDropdownDpd.style.zIndex = "1100";
+  }
+});
+
+// --------------------------------- //
+
+let newsNavDpd = document.getElementById('news_nav_dpd');
+let newsDropdownDpd = document.getElementById('news_dropdown_dpd');
+
+let isNewsDropdownDpdVisible = false;
+
+newsNavDpd.addEventListener('click', function(event){
+  event.stopPropagation();
+  isNewsDropdownDpdVisible = !isNewsDropdownDpdVisible;
+
+  if(isNewsDropdownDpdVisible){
+    // productsDropdown.style.display = 'block';
+    newsDropdownDpd.style.transform = 'translateY(0)';
+    newsDropdownDpd.style.opacity = '1';
+    newsDropdownDpd.style.zIndex = "1100";
+  }else{
+    // productsDropdown.style.display = 'none';
+    newsDropdownDpd.style.transform = 'translateY(-10px)';
+    newsDropdownDpd.style.opacity = '0';
+    newsDropdownDpd.style.zIndex = "1000";
+  }
+})
+
+document.addEventListener('click', function(event) {
+  if (isNewsDropdownDpdVisible && !newsNav.contains(event.target) && !newsDropdownDpd.contains(event.target)) {
+      isNewsDropdownDpdVisible = false;
+      // dropdown.style.visibility = 'hidden';
+      newsDropdownDpd.style.transform = 'translateY(-10px)';
+      newsDropdownDpd.style.opacity = '0';
+      newsDropdownDpd.style.zIndex = "1000";
   }
 });
 
