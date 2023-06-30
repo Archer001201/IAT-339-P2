@@ -50,6 +50,7 @@ header{
     gap:65%;
     min-width: fit-content;
     max-width: 1000px;
+    /* height: 465px; */
     /* border: 1px solid red; */
 }
 
@@ -81,6 +82,7 @@ header{
     height: 720px;
     z-index: -1;
     overflow: hidden;
+    /* border: 1px solid red; */
   }
   
   .video-background video {
@@ -123,10 +125,11 @@ header{
     text-decoration: none;
     color: black;
     min-width: 25%;
+    /* z-index: 100; */
 }
 
 .new_release{
-    margin-top: 3rem;
+    margin-top: 6rem;
     display:flex;
     justify-content:space-between;
     /* border:1px solid blue; */
@@ -137,7 +140,10 @@ header{
     display: block;
     align-items: center;
     text-align: center;
+    /* width: 30%; */
+    /* height: auto; */
     margin: auto;
+    /* border: 1px solid black; */
 }
 
 .new_text_content img{
@@ -156,8 +162,7 @@ header{
 .change_page_dot{
     display: flex;
     gap: 0.5rem;
-    align-items: center;
-    position: absolute;
+    justify-content: center;
     left: 22%;
 }
 
@@ -168,7 +173,12 @@ header{
 .half_hundred_picture{
     width:50%;
     height: auto;
-    /* border:1px solid rgb(173, 14, 0); */
+    border: 1px solid reds;
+}
+
+.half_hundred_picture img{
+    width: 100%;
+    height: auto;
 }
 
 .newsletter{
@@ -381,7 +391,7 @@ nav{
     position: absolute;
     top: 100%;
     right: 0;
-    z-index: 1000;
+    z-index: 0;
     transform: translateX(10px);
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
@@ -700,6 +710,27 @@ input[type="radio"]:focus{
     background-color: gold;
 }
 
+@media only screen and (max-width: 1240px){
+    .half_hundred_picture{
+        width: 620px;
+        height: 440px;
+    }
+ }
+
+ @media only screen and (max-width: 980px){
+    .half_hundred_picture{
+        width: 60%;
+        height: auto;
+        margin: auto;
+    }
+
+    .new_release{
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 8rem;
+    }
+ }
+
 @media only screen and (max-width: 800px){
    .footer_content{
     display: block;
@@ -727,14 +758,20 @@ input[type="radio"]:focus{
         margin: auto;
     }
 
-    video{
-        margin: auto;
-    }
-
     .home_page{
         flex-direction: column;
     }  
+
+    .new_release{
+        margin-top: 10rem;
+    }
 }
+
+@media only screen and (max-width: 980px){
+    .half_hundred_picture{
+        width: 80%;
+    }
+ }
 
 @media only screen and (max-width: 440px){
     .dropdown_content_large a{
@@ -747,6 +784,10 @@ input[type="radio"]:focus{
 
     .input_plus_button{
         flex-direction: column;
+    }
+
+    .half_hundred_picture{
+        width: 100%;
     }
 }
 
