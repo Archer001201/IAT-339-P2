@@ -189,7 +189,7 @@ footer{
     background-color: #EBEBEB;
     width: 100%;
     margin-top: 3rem;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
 .footer_content{
@@ -201,8 +201,9 @@ footer{
 }
 
 .footer_item{
-    width: 300px;
+    width: 33.33;
     margin: 1rem 2rem;
+    margin: auto;
 }
 
 /* .footer_item a{
@@ -210,9 +211,9 @@ footer{
     text-decoration: none;
 } */
 
-.ppp{
+/* .ppp{
     margin-bottom: 3rem;
-}
+} */
 
 /* .dividing_line{
     height: 1px;
@@ -673,6 +674,13 @@ input[type="radio"]:focus{
 
 .gold{
     background-color: gold;
+}
+
+@media only screen and (max-width: 800px){
+   .footer_content{
+    display: block;
+    margin: auto;
+   }
 }
 
 @media only screen and (max-width: 850px){
