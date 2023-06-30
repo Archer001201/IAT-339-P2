@@ -30,7 +30,7 @@
       <a href="#" class="header_logo fade"><img class="hover_transparent" src="imgs/logo.png" alt="lgo" width="50" height="50"></a>
 
       <div class="nav_main fade center_align no_condense">
-        <div class="nav_dropdown">
+        <!-- <div class="nav_dropdown"> -->
           <a class="nav_main_button" href="#">home</a>
           <!-- <div class="dropdown_content">
                   <a class="nav_dropdown_button" href="../index.html#In-text_link">In-text Link</a>
@@ -38,11 +38,11 @@
                   <a class="nav_dropdown_button" href="../index.html#Numbered_Lists">Numbered Lists</a>
                   <a class="nav_dropdown_button" href="../index.html#Basic_Branding_Ideas">Branding Ideas</a>
               </div> -->
-        </div>
+        <!-- </div> -->
 
-        <div class="nav_dropdown">
-          <a class="nav_main_button" href="html/ather/all_listing.html">products</a>
-          <div class="dropdown_content">
+        <div class="nav_dropdown" id="products_nav">
+          <div class="nav_main_button">products</div>
+          <div class="dropdown_content" id="products_dropdown">
             <a class="nav_dropdown_button">necklace</a>
             <a class="nav_dropdown_button">bracelet</a>
             <a class="nav_dropdown_button">ring</a>
@@ -50,9 +50,9 @@
           </div>
         </div>
 
-        <div class="nav_dropdown">
-          <a class="nav_main_button">news</a>
-          <div class="dropdown_content">
+        <div class="nav_dropdown" id="news_nav">
+          <div class="nav_main_button">news</div>
+          <div class="dropdown_content" id="news_dropdown">
             <a class="nav_dropdown_button">event</a>
           </div>
         </div>
@@ -203,7 +203,7 @@
       <p>black diamond, natural diamond, rose gold</p>
       <p>5800$ Tax Excl</p>
     </div>
-    <p class = "box_button home_content_button" href="#">learn more</p>
+    <div class = "home_content_button box_button" href="#">learn more</div>
   </div>
 
   <img class = "half_hundred_picture" src="imgs/new_collection.webp" alt="new collection"> 
@@ -216,7 +216,7 @@
   <label for="email"></label>
   <div class = "input_plus_button">
     <input type="email" id="email" class="user_input email" placeholder="your email...">
-    <p class = "box_button">SUBSCRIBE</p>
+    <div class = "box_button">SUBSCRIBE</div>
   </div>
   <p>Submitting confirms that you have read and understood our privacy policy</p>
 </div>
