@@ -1,3 +1,6 @@
+
+/* Montserrat style normal */
+
 @font-face{
     font-family: 'Montserrat';
     font-weight: normal;
@@ -19,10 +22,83 @@
     src: url("../fonts/Montserrat-Light.ttf") format('truetype');
 }
 
+/* Montserrat style italic */
+
+@font-face{
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-style:italic;
+    src: url("../fonts/Montserrat-italic.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/Montserrat-BoldItalic.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: light;
+    font-style: italic;
+    src: url("../fonts/Montserrat-LightItalic.ttf") format('truetype');
+}
+
+/* Geomanist paragraph style*/
+
 @font-face {
     line-height: 1.5;
     font-family: 'Geomanist';
     font-weight: normal;
     font-style: normal;
     src: url("../fonts/Geomanist-Regular.otf") format('opentype');
+}
+
+/* Geomanist style normal*/
+
+@font-face {
+    font-family: 'Geomanist';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Geomanist-Regular.otf") format('opentype');
+}
+
+/* Geomanist style italic*/
+
+@font-face {
+    font-family: 'Geomanist';
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/Geomanist-Regular-Italic.otf") format('opentype');
+}
+
+/* Cinzel style*/
+
+@font-face {
+    font-family: 'Cinzel';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Cinzel-Regular.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Cinzel-Regular.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    font-weight: bolder;
+    font-style: normal;
+    src: url("../fonts/Cinzel-Black.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/Cinzel-Bold.ttf") format('opentype');
 }
