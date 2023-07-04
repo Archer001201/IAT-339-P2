@@ -1,0 +1,26 @@
+
+.hero_button{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0.25rem;
+}
+
+/* .hero_button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.hero_button:hover::before,
+.hero_button:focus::before{
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+} */
