@@ -287,11 +287,14 @@ nav{
 .nav_main_button{
     display: inline-block;
     width: fit-content;
+    height: min-content;
     text-decoration: none;
     color: black;
     position: relative;
     overflow: hidden;
     padding-bottom: 0.25rem;
+    /* border: 1px solid red; */
+    /* padding-bottom: 0.25rem; */
 }
 
 .nav_main_button::before{
@@ -337,6 +340,8 @@ nav{
     background-color: white;
     min-width: 15%;
     padding-top: 0.75rem;
+    /* top: 1rem; */
+    /* margin-top: 1rem; */
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
     z-index: 1000;
     transform: translateY(-10px);
@@ -785,6 +790,10 @@ input[type="radio"]:focus{
 
 @media only screen and (max-width: 440px){
     .dropdown_content_large a{
+        font-size: xx-small;
+    }
+
+    .dropdown_content_large div{
         font-size: xx-small;
     }
 
