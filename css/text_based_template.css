@@ -89,7 +89,7 @@ img{
 
 .brand_version{
     font-size: 3rem;
-    font-weight: thin;
+    font-weight:lighter;
     text-align: center;
     margin-top: -5rem;
     margin-bottom: 5rem;
@@ -128,7 +128,7 @@ li{
     width: 70rem;
     margin: auto;
     font-size: 3rem;
-    font-weight: thin;
+    font-weight:lighter;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 5rem;
@@ -189,7 +189,7 @@ li{
 
     .title, .brand_version{
         display: block;
-        align-content: left;
+        align-content:start;
         min-width:25%;
         /* border-bottom:0.5px solid #545454; */
         margin-left: 5%;
@@ -198,7 +198,7 @@ li{
 
     .section_name{
         margin-left: 0;
-        align-content: left;
+        align-content:start;
         margin-left: 0%;
     }
 

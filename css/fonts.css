@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    font-weight: light;
+    /* font-weight: light; */
     font-style: normal;
     src: url("../fonts/Montserrat-Light.ttf") format('truetype');
 }
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    font-weight: light;
+    /* font-weight: light; */
     font-style: italic;
     src: url("../fonts/Montserrat-LightItalic.ttf") format('truetype');
 }
@@ -48,7 +48,7 @@
 /* Geomanist paragraph style*/
 
 @font-face {
-    line-height: 1.5;
+    /* line-height: 1.5; */
     font-family: 'Geomanist';
     font-weight: normal;
     font-style: normal;
@@ -91,7 +91,7 @@
 
 @font-face {
     font-family: 'Cinzel';
-    font-weight: bolder;
+    /* font-weight: bolder; */
     font-style: normal;
     src: url("../fonts/Cinzel-Black.ttf") format('opentype');
 }
