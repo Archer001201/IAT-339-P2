@@ -57,7 +57,8 @@ header{
 .home_page h1{
     font-family: 'Cinzel',sans-serif;
     font-size: 2.5rem;
-    font-style: light;
+    /* font-style: lighter; */
+    font-weight: normal;
     /* border: 1px solid black; */
 }
 
@@ -139,7 +140,7 @@ header{
 
 .new_text_content{
     display: block;
-    align-items: left;
+    /* align-items: left; */
     text-align: center;
     /* width: 30%; */
     /* height: auto; */
