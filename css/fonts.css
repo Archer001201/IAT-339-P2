@@ -79,26 +79,26 @@
     font-family: 'Cinzel';
     font-weight: normal;
     font-style: normal;
-    src: url("../fonts/Cinzel-Regular.ttf") format('opentype');
+    src: url("../fonts/Cinzel-Regular.ttf") format('truetype');
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Cinzel';
     font-weight: normal;
     font-style: normal;
     src: url("../fonts/Cinzel-Regular.ttf") format('opentype');
-}
+} */
 
 @font-face {
     font-family: 'Cinzel';
-    /* font-weight: bolder; */
+    font-weight:900;
     font-style: normal;
-    src: url("../fonts/Cinzel-Black.ttf") format('opentype');
+    src: url("../fonts/Cinzel-SemiBold.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Cinzel';
     font-weight: bold;
     font-style: normal;
-    src: url("../fonts/Cinzel-Bold.ttf") format('opentype');
+    src: url("../fonts/Cinzel-Bold.ttf") format('truetype');
 }
