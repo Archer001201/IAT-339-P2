@@ -1,6 +1,26 @@
 "use strict";
   
-function showAlert() {
-    alert("You have successfully made the payment!");
-    window.location.href = "../../index.html";
+function checkUserStatus() {
+    const userStatus = localStorage.getItem('userStatus');
+  
+    if (!userStatus || userStatus !== 'submitted') {
+      document.querySelector('.popup-overlay').style.display = 'none';
+    }
   }
+
+  function setUserStatus() {
+    localStorage.setItem('userStatus', 'submitted');
+  }
+  
+  function hidePopup() {
+    document.querySelector('.popup-overlay').style.display = 'none';
+  }
+
+  function showPopup(){
+    document.getElementById("popup").style.display = "block";
+  }
+  
+  window.addEventListener('load', function() {
+    checkUserStatus();
+});
+  

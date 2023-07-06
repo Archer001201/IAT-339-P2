@@ -151,9 +151,19 @@
             <input type="text" id="security_code" class="user_input">
           </div>
         </div>
-        <input type="submit" class="box_button payment_item" value="Check Out" onclick="showAlert()">
+        <input type="submit" class="box_button payment_item" value="Check Out" onclick="showPopup()">
       </div>
     </section>
+  </div>
+
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <div class="popup_content">
+        <h2>Thank you for your payment!</h2>
+        <p>Your payment has been successfully processed.</p>
+        <button class="close_button" onclick="hidePopup()">Close</button>
+      </div>
+    </div>
   </div>
 
   <footer>
