@@ -343,8 +343,8 @@ nav{
     padding-top: 0.75rem;
     /* top: 1rem; */
     /* margin-top: 1rem; */
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
-    z-index: 1000;
+    /* box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
     /* transform: translateY(-10px); */
     transform: translateY(-220%); 
     opacity: 0;
@@ -387,7 +387,7 @@ nav{
     /* border: 1px solid blue; */
 }
 
-.slide_window{
+.slide_window.right_side{
     /* border: 1px solid red; */
     background-color: white;
     /* background-color: transparent; */
@@ -406,8 +406,45 @@ nav{
     align-items: center;
 }
 
+.slide_window.left_side{
+    /* border: 1px solid red; */
+    background-color: white;
+    /* background-color: transparent; */
+    width: 100%;
+    height: 99vh;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 0;
+    transform: translateX(-100%); 
+    transition: transform 0.5s ease-out;
+    display: flex;
+    background-image: url(../imgs/WechatIMG4928.jpg);
+    background-repeat: none;
+    background-size: cover;
+    /* justify-content: center; */
+    /* opacity: 0; */
+    /* transition: transform 0.5s ease-out, opacity 0.5s ease-out; */
+}
+
+.left_side h1{
+    color: #ffffff;
+}
+
 .slide_window a{
     text-decoration: none;
+}
+
+.left_side_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 1rem;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
 }
 
 .cart_product.horizontal{
@@ -478,24 +515,25 @@ nav{
     /* padding-left: 50px; */
     transition: transform 0.3s ease-in-out;
     /* border: 1px solid red; */
+    padding-left: 1rem;
 }
 
 .nav_dropdown_button::before{
     content: '';
     position: absolute;
     width: 0;
-    height: 1px;
+    height: 3px;
     bottom: 0;
-    top: 50%;
+    top: 45%;
     left: 0;
-    background-color: black;
+    background-color: white;
     transition: width 0.3s ease-in-out;
     transform: translateY(-50%);
 }
 
 .nav_dropdown_button:hover::before, 
 .nav_dropdown_button:focus::before {
-    width: 10px;
+    width:12px;
 }
 
 .nav_dropdown_button:hover,
