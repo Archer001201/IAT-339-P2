@@ -226,24 +226,27 @@ header{
 footer{
     background-color: #EBEBEB;
     width: 100%;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     padding: 1rem 2rem;
 }
 
 .footer_content{
     max-width: 1500px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
+    border: 1px solid black;
 }
 
 .footer_item{
     display: flex;
     flex-direction: column;
     width: 33.33;
-    margin: 1rem 2rem;
-    margin: auto;
+    margin: 0 2rem;
+    /* margin: auto; */
+    border: 1px solid red;
 }
 
 .footer_item a{
