@@ -44,7 +44,7 @@ bar.addEventListener('click', function(event){
   }else{
       slideWindowLeft.style.transform = 'translateX(-100%)';
       // slideWindow.style.opacity = '0';
-      slideWindowLeft.style.zIndex = '0';
+      slideWindowLeft.style.zIndex = '1100';
   }
 })
 
@@ -65,7 +65,7 @@ cart.addEventListener('click', function(event){
     }else{
         slideWindowRight.style.transform = 'translateX(100%)';
         // slideWindow.style.opacity = '0';
-        slideWindowRight.style.zIndex = '0';
+        slideWindowRight.style.zIndex = '1100';
     }
 })
 
