@@ -206,6 +206,14 @@ document.addEventListener('click', function(event) {
   }
 });
 
+$(document).ready(function(){
+  $(".small_link a").hover(function(){
+    $(".small_link a").not(this).css("color", "gray");
+  }, function(){
+    $(".small_link a").css("color", "black");
+  });
+});
+
 
 
 

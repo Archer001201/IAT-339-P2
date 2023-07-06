@@ -43,13 +43,18 @@ header{
 
 /* main part style */
 .home_page{
+    background-image: url(../imgs/home1_MConverter.eu.webp);
+    background-size: cover;
+    transform: scaleX(-1);
+    padding: 15rem 0;
     margin: auto;
-    margin-top: 15rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-around;
     gap:50%;
     min-width: fit-content;
-    max-width: 1600px;
+    flex-direction: row-reverse;
+    /* max-width: 1600px; */
     /* height: 465px; */
     /* border: 1px solid red; */
 }
@@ -94,14 +99,14 @@ header{
     /* animation: fadeOut 5s linear forwards; */
   }
   
-  @keyframes fadeOut {
+  /* @keyframes fadeOut {
     0% {
       opacity: 1;
     }
     100% {
       opacity: 0;
     }
-  }
+  } */
 
 /* .home_pic{ */
     /* background-image: url(../../imgs/home.gif );
@@ -117,7 +122,12 @@ header{
 /* } */
 
 .small_link{
+    transform: scaleX(-1);
     margin-top: 5rem;
+}
+
+.brand_name{
+    transform: scaleX(-1);
 }
 
 .small_link a{
@@ -127,8 +137,18 @@ header{
     text-decoration: none;
     color: black;
     min-width: 25%;
+    transition: color 0.5s ease;
     /* z-index: 100; */
 }
+
+/* .small_link a:hover,
+.small_link a:hover{
+    color: black;
+}
+
+.small_link a:not(:hover) {
+    color: gray;
+} */
 
 .new_release{
     margin-top: 12rem;
@@ -150,9 +170,10 @@ header{
 
 .new_text_content img{
     /* width: 60%; */
-    height: auto;
+    /* height: auto;
+    width: auto; */
     margin-bottom: 1rem;
-    /* border:1px solid blue; */
+    border:1px solid blue;
 }
 
 .home_content_button{
@@ -176,6 +197,7 @@ header{
     margin-top: 2rem;
     width:50vw;
     height: auto;
+    /* border: 1px solid red; */
 }
 
 .newsletter{
@@ -894,5 +916,12 @@ input[type="radio"]:focus{
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 350px){
+    .new_text_content img{
+        width: 280px;
+        height: auto;
+    }
+ }
 
 
