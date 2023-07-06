@@ -243,7 +243,6 @@ footer{
 .footer_item{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 33.33;
     margin: 0 2rem;
     /* margin: auto; */
@@ -256,16 +255,16 @@ footer{
 
 .footer_link_button{
     display: flex;
-    gap: 0.6rem;
-    justify-content: space-between;
+    gap: 14px;
   }
 
-  .footer_text_link{
+  /* .footer_text_link{
     width: fit-content;
-  }
+  } */
 
   .link_icon{
-    margin: auto;
+    margin-bottom: 0.5rem;
+    margin-top: auto;
   }
 
 /* .ppp{
