@@ -90,20 +90,6 @@
     text-align: center;
   }
 
-  .footer_link_button{
-    display: flex;
-    gap: 0.6rem;
-    justify-content: center;
-  }
-
-  .footer_text_link{
-    width: fit-content;
-  }
-
-  .link_icon{
-    margin: auto;
-    height: fit-content;
-  }
   
   /* .close-btn {
     background-color: #ccc;

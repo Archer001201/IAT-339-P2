@@ -227,7 +227,7 @@ footer{
     background-color: #EBEBEB;
     width: 100%;
     /* margin-top: 3rem; */
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .footer_content{
@@ -237,21 +237,36 @@ footer{
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .footer_item{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 33.33;
     margin: 0 2rem;
     /* margin: auto; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .footer_item a{
    margin-top: 1rem;
 }
+
+.footer_link_button{
+    display: flex;
+    gap: 0.6rem;
+    justify-content: space-between;
+  }
+
+  .footer_text_link{
+    width: fit-content;
+  }
+
+  .link_icon{
+    margin: auto;
+  }
 
 /* .ppp{
     margin-bottom: 3rem;
