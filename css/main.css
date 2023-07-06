@@ -48,16 +48,16 @@ header{
     transform: scaleX(-1);
     padding: 15rem 0;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 0;
     display: flex;
     justify-content: space-around;
-    gap:50%;
+    gap:20%;
     min-width: fit-content;
     flex-direction: row-reverse;
     /* max-width: 1600px; */
     /* height: 465px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .home_page h1{
@@ -124,7 +124,7 @@ header{
 
 .small_link{
     transform: scaleX(-1);
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .brand_name{
@@ -132,11 +132,11 @@ header{
 }
 
 .small_link a{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     display: block;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     min-width: 25%;
     transition: color 0.5s ease;
     /* z-index: 100; */
@@ -202,7 +202,7 @@ header{
 }
 
 .newsletter{
-    margin-top: 8rem;
+    margin: 8rem 1rem;
     text-align: center;
 }
 
