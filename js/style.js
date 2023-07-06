@@ -78,11 +78,11 @@ cart.addEventListener('click', function(event){
 
     if(isSlideVisible){
         slideWindow.style.transform = 'translateX(0)';
-        slideWindow.style.opacity = '1';
+        // slideWindow.style.opacity = '1';
         slideWindow.style.zIndex = '1100';
     }else{
-        slideWindow.style.transform = 'translateX(10px)';
-        slideWindow.style.opacity = '0';
+        slideWindow.style.transform = 'translateX(100%)';
+        // slideWindow.style.opacity = '0';
         slideWindow.style.zIndex = '0';
     }
 })
@@ -106,7 +106,7 @@ productsNav.addEventListener('click', function(event){
     productsDropdown.style.zIndex = "1100";
   }else{
     // productsDropdown.style.display = 'none';
-    productsDropdown.style.transform = 'translateY(-10px)';
+    productsDropdown.style.transform = 'translateY(-220%)';
     productsDropdown.style.opacity = '0';
     productsDropdown.style.zIndex = "1100";
   }
