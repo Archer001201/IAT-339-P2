@@ -57,7 +57,7 @@ header{
     flex-direction: row-reverse;
     /* max-width: 1600px; */
     /* height: 465px; */
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .home_page h1{
@@ -827,6 +827,24 @@ input[type="radio"]:focus{
     background-color: gold;
 }
 
+@media only screen and (max-width: 1440px){
+    .new_text_content img{
+        /* width: 60%; */
+        /* height: auto;
+        width: auto; */
+        margin-bottom: 0rem;
+        /* border:1px solid blue; */
+    }
+    
+    .home_content_button{
+        margin-top: 1rem;
+    }
+
+    .detail_clusters{
+        margin-top: 2rem;
+    }
+ }
+
 @media only screen and (max-width: 1240px){
     .half_hundred_picture{
         width: 620px;
@@ -882,11 +900,19 @@ input[type="radio"]:focus{
     .new_release{
         margin-top: 10rem;
     }
+
+    /* .new_text_content{
+        margin-top: -10rem;
+    } */
 }
 
 @media only screen and (max-width: 980px){
     .half_hundred_picture{
         width: 80%;
+    }
+
+    .new_text_content{
+        margin-top: -5rem;
     }
  }
 
