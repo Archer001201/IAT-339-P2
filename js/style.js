@@ -72,143 +72,143 @@ cart.addEventListener('click', function(event){
 
 // --------------------------------- //
 
-let productsNav = document.getElementById('products_nav');
-let productsDropdown = document.getElementById('products_dropdown');
+// let productsNav = document.getElementById('products_nav');
+// let productsDropdown = document.getElementById('products_dropdown');
 
-let isProductsDropdownVisible = false;
+// let isProductsDropdownVisible = false;
 
-productsNav.addEventListener('click', function(event){
-  event.stopPropagation();
-  isProductsDropdownVisible = !isProductsDropdownVisible;
+// productsNav.addEventListener('click', function(event){
+//   event.stopPropagation();
+//   isProductsDropdownVisible = !isProductsDropdownVisible;
 
-  if(isProductsDropdownVisible){
-    // productsDropdown.style.display = 'block';
-    productsDropdown.style.transform = 'translateY(0)';
-    productsDropdown.style.opacity = '1';
-    productsDropdown.style.zIndex = "1";
-  }else{
-    // productsDropdown.style.display = 'none';
-    productsDropdown.style.transform = 'translateY(-220%)';
-    productsDropdown.style.opacity = '0';
-    productsDropdown.style.zIndex = "1";
-  }
-})
+//   if(isProductsDropdownVisible){
+//     // productsDropdown.style.display = 'block';
+//     productsDropdown.style.transform = 'translateY(0)';
+//     productsDropdown.style.opacity = '1';
+//     productsDropdown.style.zIndex = "1";
+//   }else{
+//     // productsDropdown.style.display = 'none';
+//     productsDropdown.style.transform = 'translateY(-220%)';
+//     productsDropdown.style.opacity = '0';
+//     productsDropdown.style.zIndex = "1";
+//   }
+// })
 
-document.addEventListener('click', function(event) {
-  if (isProductsDropdownVisible && !productsNav.contains(event.target) && !productsDropdown.contains(event.target)) {
-      isProductsDropdownVisible = false;
-      // dropdown.style.visibility = 'hidden';
-      productsDropdown.style.transform = 'translateY(-10px)';
-      productsDropdown.style.opacity = '0';
-      productsDropdown.style.zIndex = "1100";
-  }
-});
-
-// --------------------------------- //
-
-let newsNav = document.getElementById('news_nav');
-let newsDropdown = document.getElementById('news_dropdown');
-
-let isNewsDropdownVisible = false;
-
-newsNav.addEventListener('click', function(event){
-  event.stopPropagation();
-  isNewsDropdownVisible = !isNewsDropdownVisible;
-
-  if(isNewsDropdownVisible){
-    // productsDropdown.style.display = 'block';
-    newsDropdown.style.transform = 'translateY(0)';
-    newsDropdown.style.opacity = '1';
-    newsDropdown.style.zIndex = "1100";
-  }else{
-    // productsDropdown.style.display = 'none';
-    newsDropdown.style.transform = 'translateY(-10px)';
-    newsDropdown.style.opacity = '0';
-    newsDropdown.style.zIndex = "1000";
-  }
-})
-
-document.addEventListener('click', function(event) {
-  if (isNewsDropdownVisible && !newsNav.contains(event.target) && !newsDropdown.contains(event.target)) {
-      isNewsDropdownVisible = false;
-      // dropdown.style.visibility = 'hidden';
-      newsDropdown.style.transform = 'translateY(-10px)';
-      newsDropdown.style.opacity = '0';
-      newsDropdown.style.zIndex = "1000";
-  }
-});
+// document.addEventListener('click', function(event) {
+//   if (isProductsDropdownVisible && !productsNav.contains(event.target) && !productsDropdown.contains(event.target)) {
+//       isProductsDropdownVisible = false;
+//       // dropdown.style.visibility = 'hidden';
+//       productsDropdown.style.transform = 'translateY(-10px)';
+//       productsDropdown.style.opacity = '0';
+//       productsDropdown.style.zIndex = "1100";
+//   }
+// });
 
 // --------------------------------- //
 
-let productsNavDpd = document.getElementById('products_nav_dpd');
-let productsDropdownDpd = document.getElementById('products_dropdown_dpd');
+// let newsNav = document.getElementById('news_nav');
+// let newsDropdown = document.getElementById('news_dropdown');
 
-let isProductsDropdownDpdVisible = false;
+// let isNewsDropdownVisible = false;
 
-productsNavDpd.addEventListener('click', function(event){
-  event.stopPropagation();
-  isProductsDropdownDpdVisible = !isProductsDropdownDpdVisible;
+// newsNav.addEventListener('click', function(event){
+//   event.stopPropagation();
+//   isNewsDropdownVisible = !isNewsDropdownVisible;
 
-  if(isProductsDropdownDpdVisible){
-    // productsDropdown.style.display = 'block';
-    productsDropdownDpd.style.transform = 'translateY(0)';
-    productsDropdownDpd.style.opacity = '1';
-    productsDropdownDpd.style.zIndex = "1100";
-  }else{
-    // productsDropdown.style.display = 'none';
-    productsDropdownDpd.style.transform = 'translateY(-10px)';
-    productsDropdownDpd.style.opacity = '0';
-    productsDropdownDpd.style.zIndex = "1100";
-  }
-})
+//   if(isNewsDropdownVisible){
+//     // productsDropdown.style.display = 'block';
+//     newsDropdown.style.transform = 'translateY(0)';
+//     newsDropdown.style.opacity = '1';
+//     newsDropdown.style.zIndex = "1100";
+//   }else{
+//     // productsDropdown.style.display = 'none';
+//     newsDropdown.style.transform = 'translateY(-10px)';
+//     newsDropdown.style.opacity = '0';
+//     newsDropdown.style.zIndex = "1000";
+//   }
+// })
 
-document.addEventListener('click', function(event) {
-  if (isProductsDropdownVisibleDpd && !productsNavDpd.contains(event.target) && !productsDropdownDpd.contains(event.target)) {
-      isProductsDropdownVisibleDpd = false;
-      // dropdown.style.visibility = 'hidden';
-      productsDropdownDpd.style.transform = 'translateY(-10px)';
-      productsDropdownDpd.style.opacity = '0';
-      productsDropdownDpd.style.zIndex = "1100";
-  }
-});
+// document.addEventListener('click', function(event) {
+//   if (isNewsDropdownVisible && !newsNav.contains(event.target) && !newsDropdown.contains(event.target)) {
+//       isNewsDropdownVisible = false;
+//       // dropdown.style.visibility = 'hidden';
+//       newsDropdown.style.transform = 'translateY(-10px)';
+//       newsDropdown.style.opacity = '0';
+//       newsDropdown.style.zIndex = "1000";
+//   }
+// });
 
 // --------------------------------- //
 
-let newsNavDpd = document.getElementById('news_nav_dpd');
-let newsDropdownDpd = document.getElementById('news_dropdown_dpd');
+// let productsNavDpd = document.getElementById('products_nav_dpd');
+// let productsDropdownDpd = document.getElementById('products_dropdown_dpd');
 
-let isNewsDropdownDpdVisible = false;
+// let isProductsDropdownDpdVisible = false;
 
-newsNavDpd.addEventListener('click', function(event){
-  event.stopPropagation();
-  isNewsDropdownDpdVisible = !isNewsDropdownDpdVisible;
+// productsNavDpd.addEventListener('click', function(event){
+//   event.stopPropagation();
+//   isProductsDropdownDpdVisible = !isProductsDropdownDpdVisible;
 
-  if(isNewsDropdownDpdVisible){
-    // productsDropdown.style.display = 'block';
-    newsDropdownDpd.style.transform = 'translateY(0)';
-    newsDropdownDpd.style.opacity = '1';
-    newsDropdownDpd.style.zIndex = "1100";
-  }else{
-    // productsDropdown.style.display = 'none';
-    newsDropdownDpd.style.transform = 'translateY(-10px)';
-    newsDropdownDpd.style.opacity = '0';
-    newsDropdownDpd.style.zIndex = "1000";
-  }
-})
+//   if(isProductsDropdownDpdVisible){
+//     // productsDropdown.style.display = 'block';
+//     productsDropdownDpd.style.transform = 'translateY(0)';
+//     productsDropdownDpd.style.opacity = '1';
+//     productsDropdownDpd.style.zIndex = "1100";
+//   }else{
+//     // productsDropdown.style.display = 'none';
+//     productsDropdownDpd.style.transform = 'translateY(-10px)';
+//     productsDropdownDpd.style.opacity = '0';
+//     productsDropdownDpd.style.zIndex = "1100";
+//   }
+// })
 
-document.addEventListener('click', function(event) {
-  if (isNewsDropdownDpdVisible && !newsNav.contains(event.target) && !newsDropdownDpd.contains(event.target)) {
-      isNewsDropdownDpdVisible = false;
-      // dropdown.style.visibility = 'hidden';
-      newsDropdownDpd.style.transform = 'translateY(-10px)';
-      newsDropdownDpd.style.opacity = '0';
-      newsDropdownDpd.style.zIndex = "1000";
-  }
-});
+// document.addEventListener('click', function(event) {
+//   if (isProductsDropdownVisibleDpd && !productsNavDpd.contains(event.target) && !productsDropdownDpd.contains(event.target)) {
+//       isProductsDropdownVisibleDpd = false;
+//       // dropdown.style.visibility = 'hidden';
+//       productsDropdownDpd.style.transform = 'translateY(-10px)';
+//       productsDropdownDpd.style.opacity = '0';
+//       productsDropdownDpd.style.zIndex = "1100";
+//   }
+// });
+
+// --------------------------------- //
+
+// let newsNavDpd = document.getElementById('news_nav_dpd');
+// let newsDropdownDpd = document.getElementById('news_dropdown_dpd');
+
+// let isNewsDropdownDpdVisible = false;
+
+// newsNavDpd.addEventListener('click', function(event){
+//   event.stopPropagation();
+//   isNewsDropdownDpdVisible = !isNewsDropdownDpdVisible;
+
+//   if(isNewsDropdownDpdVisible){
+//     // productsDropdown.style.display = 'block';
+//     newsDropdownDpd.style.transform = 'translateY(0)';
+//     newsDropdownDpd.style.opacity = '1';
+//     newsDropdownDpd.style.zIndex = "1100";
+//   }else{
+//     // productsDropdown.style.display = 'none';
+//     newsDropdownDpd.style.transform = 'translateY(-10px)';
+//     newsDropdownDpd.style.opacity = '0';
+//     newsDropdownDpd.style.zIndex = "1000";
+//   }
+// })
+
+// document.addEventListener('click', function(event) {
+//   if (isNewsDropdownDpdVisible && !newsNav.contains(event.target) && !newsDropdownDpd.contains(event.target)) {
+//       isNewsDropdownDpdVisible = false;
+//       // dropdown.style.visibility = 'hidden';
+//       newsDropdownDpd.style.transform = 'translateY(-10px)';
+//       newsDropdownDpd.style.opacity = '0';
+//       newsDropdownDpd.style.zIndex = "1000";
+//   }
+// });
 
 $(document).ready(function(){
   $(".small_link a").hover(function(){
-    $(".small_link a").not(this).css("color", "gray");
+    $(".small_link a").not(this).css("color", "rgb(180, 180, 180)");
   }, function(){
     $(".small_link a").css("color", "black");
   });
