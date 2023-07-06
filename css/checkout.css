@@ -90,13 +90,13 @@
     text-align: center;
   }
   
-  .close-btn {
+  /* .close-btn {
     background-color: #ccc;
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
-  }
+  } */
 
 @media only screen and (max-width: 1350px){
     .payment_item .vertical{
