@@ -113,24 +113,31 @@
         </header>
         <!-- <div class="start"></div> -->
         
-          <section>
-            <div class="product_image">
-              <img src="../../imgs/rolling_1.png" alt="Rolling" width="1400" height="535">
+          <section class="carousel">
+            <!-- <div class="carousel"> -->
+              <div class="product_image">
+                <img class="carousel-image" src="../../imgs/rolling_1.png" alt="Rolling" width="1400" height="535">
+                <img class="carousel-image" src="../../imgs/rolling_2.png" alt="Rolling" width="1400" height="535">
+                <img class="carousel-image" src="../../imgs/rolling_3.png" alt="Rolling" width="1400" height="535">
+              </div>
+             
+              <div class="text-after-carousel"></div>
+              
               <div class="horizontal">
                 <div class="change_color">
-                  <div class="dot silver"></div>
+                  <div class="dot silver" data-image-index="0"></div>
                   <p>Sliver</p>
                 </div>
                 <div class="change_color">
-                  <div class="dot rose_gold"></div>
+                  <div class="dot rose_gold" data-image-index="1"></div>
                   <p>Rose Gold</p>
                 </div>
                 <div class="change_color">
-                  <div class="dot gold"></div>
+                  <div class="dot gold" data-image-index="2"></div>
                   <p>Gold</p>
                 </div>
               </div>      
-            </div>
+            <!-- </div> -->
           </section>
         <div class="body_container">
           <section class="product_detail_text">
@@ -197,4 +204,5 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="../../js/style.js"></script>
+      <script src="../../js/detail.js"></script>
 </html>
