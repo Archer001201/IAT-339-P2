@@ -229,10 +229,15 @@ header {
     font-family: 'Cinzel', sans-serif;
     font-size: 5rem;
     font-weight: bold;
+    text-align: center;
+    margin: 0, 10px;
 }
 
 .event_showcase_info p{
     margin: 0;
+    max-width: 45%;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .event_showcase_info a{
@@ -958,6 +963,14 @@ input[type="radio"]:focus {
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    .event_showcase_info h1{
+        font-family: 'Cinzel', sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
 @media only screen and (max-width: 980px) {
     .half_hundred_picture {
         width: 60%;
@@ -1066,6 +1079,10 @@ input[type="radio"]:focus {
 
     .half_hundred_picture {
         width: 100%;
+    }
+
+    .event_showcase_info p{
+        max-width: 80%;
     }
 }
 
