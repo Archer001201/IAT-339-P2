@@ -2,7 +2,7 @@
     border: 1px solid red;
 } */
 
-.product_image{
+.product_image {
     /* background-image: url(../imgs/rolling_1.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -17,12 +17,12 @@
     align-items: center;
 }
 
-.product_image img{
+.product_image img {
     width: 100%;
     height: auto;
 }
 
-.product_image .horizontal{
+.product_image .horizontal {
     margin-top: auto;
     padding-top: 0.5rem;
     gap: 1rem;
@@ -31,22 +31,81 @@
 
 /* Detail Description Part Style */
 
-.product_detail_text p{
+.body_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_detail_text p {
     line-height: 1.5;
 }
 
-.product_detail_text{
+.product_detail_text {
     margin: 5rem;
     width: 40%;
     margin-bottom: 5rem;
     /* border: 1px solid red; */
 }
 
-.d_title{
-    border-bottom:0.02rem solid rgb(63, 63, 63);
+.d_title {
+    border-bottom: 0.02rem solid rgb(63, 63, 63);
     margin: 0;
     display: flex;
     justify-content: space-between;
+}
+
+/* .add_icon_horizontal {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.add_icon_vertical {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    margin-left: 10px;
+} */
+
+.dropdown_title_bar {
+    display: flex;
+}
+
+.plus_icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.plus_icon span {
+    position: absolute;
+    background-color: black;
+}
+
+.plus_icon .add_icon_horizontal {
+    width: 60%;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plus_icon .add_icon_vertical {
+    width: 4px;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product_detail_drrop_down .dropdown_icon {
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown.collapsed .dropdown-icon {
+    transform: rotate(-45deg);
 }
 
 /* DETAILS
@@ -60,14 +119,14 @@ MORE DETAILS
 Three adjustment rings: 38, 40, 42 cm
 The carats, the number of stones and the metal weight are given as an indication. Non-contractual values */
 
-input{
+input {
     margin-top: 0.5rem;
     /* margin-left: 5rem;
     margin-bottom: 5rem; */
 }
 
-@media only screen and (max-width: 600px){
-    .product_detail_text{
+@media only screen and (max-width: 600px) {
+    .product_detail_text {
         width: 90%;
         margin: auto;
         /* border: 1px solid red; */
