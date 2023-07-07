@@ -206,6 +206,11 @@ header{
     /* border: 1px solid red; */
 }
 
+.event_img{
+    width: 100vw;
+    height: auto;
+}
+
 .newsletter{
     margin: 8rem 1rem;
     text-align: center;
