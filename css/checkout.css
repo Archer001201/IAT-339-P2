@@ -1,8 +1,10 @@
-.main_container{
+.checkout_main_container{
     /* border: 1px solid blue; */
-    padding: 6rem;
+    padding-top: 6rem;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3rem;
+
 }
 
 /* .main_container .horizontal{
@@ -21,6 +23,10 @@
 #Payment_Form{
     /* border: 3px solid black; */
     width: 50%;
+}
+
+#Payment_Form h2{
+    margin-left: 3rem;
 }
 
 .product_card{
@@ -49,6 +55,7 @@
     width: 80%;
     margin: auto;
     padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: rgb(240, 240, 240);
 }
 
@@ -90,6 +97,12 @@
     text-align: center;
   }
 
+  .payment_item.box_button{
+    display: block;
+    background-color: white;
+    /* width: 30%; */
+    /* word-wrap: break-word; */
+  }
   
   /* .close-btn {
     background-color: #ccc;
@@ -108,7 +121,7 @@
 }
 
 @media only screen and (max-width: 1385px){
-    .main_container{
+    .checkout_main_container{
         flex-direction: column;
     }
 
@@ -120,13 +133,13 @@
     }
 
     .product_card{
-        
         justify-content: center;
     }
 
     #Payment_Form{
         width: 98%;
         margin: auto;
+        /* border: 1px solid red; */
     }
 }
 
@@ -136,7 +149,24 @@
         /* border: 1px solid red; */
     }
 
+    /* .checkout_main_container{
+        width: 100%;
+    } */
+    #Payment_Form{
+        width: 100%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+
+
     .product_card img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .payment_container{
         width: 100%;
     }
 }

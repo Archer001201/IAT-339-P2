@@ -91,8 +91,8 @@
 
   </header>
 
-  <div class="start"></div>
-  <div class="main_container">
+  <!-- <div class="start"></div> -->
+  <div class="checkout_main_container">
     <section id="Checkout_Summary">
       <div class="product_card horizontal">
         <img src="../../imgs/Group_15_2.png" alt="Atlas Heart Dancing Diamond Necklace" width="400" height="235">
@@ -133,6 +133,21 @@
 
     <section id="Payment_Form">
       <div class="payment_container">
+        <h2>shipping address</h2>
+        <div class="payment_item horizontal">
+          <div class="vertical">
+            <label for="fName">First Name</label>
+            <input type="text" id="fName" class="user_input">
+          </div>
+          <div class="vertical">
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName" class="user_input">
+          </div>
+        </div>
+      </div>
+
+      <div class="payment_container">
+        <h2>payment</h2>
         <div class="payment_item select_payment_method">
           <div>
             <input type="radio" id="Credit" name="Payment_Method" class="payment_method">
@@ -161,7 +176,7 @@
             <input type="text" id="security_code" class="user_input">
           </div>
         </div>
-        <input type="submit" class="box_button payment_item" value="Check Out" onclick="showPopup()">
+        <input type="submit" class="payment_item box_button" value="Checkout" onclick="showPopup()">
       </div>
     </section>
   </div>

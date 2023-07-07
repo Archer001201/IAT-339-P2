@@ -230,6 +230,12 @@ footer{
     padding: 2rem 2rem;
 }
 
+footer p{
+    padding-bottom: 0.25rem;
+    margin-bottom: 0;
+    /* border: 1px solid red; */
+}
+
 .footer_content{
     max-width: 1500px;
     margin: 0 auto;
@@ -251,6 +257,7 @@ footer{
 
 .footer_item a{
    margin-top: 1rem;
+   /* border: 1px solid red; */
 }
 
 .footer_link_button{
@@ -429,7 +436,7 @@ nav{
 
 .slide_window.right_side{
     /* border: 1px solid red; */
-    background-color: white;
+    background-color: #D7DBDF;
     /* background-color: transparent; */
     width: 320px;
     height: 99vh;
@@ -444,6 +451,11 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(88, 88, 88);
+}
+
+.right_side a{
+    color: rgb(88, 88, 88);
 }
 
 .slide_window.left_side{
@@ -694,14 +706,16 @@ nav{
 .box_button{
     /* width: 200px;
     height: 40px; */
+
     padding: 0.3rem 2rem;
     border-radius: 5px;
     border: 1px solid rgb(0, 0, 0);
-    background-image: linear-gradient(to right, rgb(51,51,51) 50%, white 50%);
+    background-image: linear-gradient(to right, rgb(51,51,51) 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right;
     transition: 0.5s ease-out;
     font-family: 'Montserrat',sans-serif;
+    /* color: white; */
 }
 
 .box_button:hover,
@@ -733,6 +747,7 @@ nav{
     border-radius: 0;
     border-bottom: 1px solid black;
     width: 36pt;
+    background-color: transparent;
 }
 
 .email{
