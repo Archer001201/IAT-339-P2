@@ -134,7 +134,7 @@
     <section id="Payment_Form">
       <div class="payment_container">
         <h2>shipping address</h2>
-        <div class="payment_item horizontal">
+        <div class="payment_item horizontal two_items">
           <div class="vertical">
             <label for="fName">First Name</label>
             <input type="text" id="fName" class="user_input">
@@ -142,6 +142,24 @@
           <div class="vertical">
             <label for="lName">Last Name</label>
             <input type="text" id="lName" class="user_input">
+          </div>
+        </div>
+        <div class="vertical payment_item">
+          <label for="address">Address</label>
+          <input type="text" id="address" class="user_input">
+        </div>
+        <div class="payment_item horizontal three_items">
+          <div class="vertical">
+            <label for="city">City</label>
+            <input type="text" id="city" class="user_input">
+          </div>
+          <div class="vertical">
+            <label for="province">Province</label>
+            <input type="text" id="province" class="user_input">
+          </div>
+          <div class="vertical">
+            <label for="pCode">ZIP</label>
+            <input type="text" id="pCode" class="user_input">
           </div>
         </div>
       </div>
@@ -166,13 +184,13 @@
           <label for="card_number">Card Number</label>
           <input type="text" id="card_number" class="user_input">
         </div>
-        <div class="payment_item horizontal">
+        <div class="payment_item horizontal two_items">
           <div class="vertical">
             <label for="expire_date">Expire Date</label>
             <input type="text" id="expire_date" class="user_input">
           </div>
           <div class="vertical">
-            <label for="security_code">Security Code</label>
+            <label for="security_code">CVV</label>
             <input type="text" id="security_code" class="user_input">
           </div>
         </div>

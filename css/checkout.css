@@ -64,11 +64,19 @@
     /* border: 1px solid blue; */
 }
 
-.payment_item + .horizontal{
+.payment_item.horizontal{
     flex-wrap: wrap;
     /* border: 1px solid red; */
     justify-content: space-between;
     width: auto;
+}
+
+.three_items .vertical{
+    width: 30%;
+}
+
+.two_items .vertical{
+    width: 48%;
 }
 
 .select_payment_method{
@@ -113,11 +121,10 @@
   } */
 
 @media only screen and (max-width: 1350px){
-    .payment_item .vertical{
+    /* .payment_item .vertical{
         width: 100%;
-        /* border: 1px solid blue; */
         margin-bottom: 1.5rem;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1385px){
@@ -144,9 +151,8 @@
 }
 
 @media only screen and (max-width: 700px){
-    .horizontal{
+    .product_card.horizontal{
         flex-direction: column;
-        /* border: 1px solid red; */
     }
 
     /* .checkout_main_container{
@@ -165,11 +171,17 @@
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     .payment_container{
         width: 100%;
     }
 }
+
+/* @media only screen and (max-width: 450px){
+    .payment_container{
+        width: 100%;
+    }
+} */
 
 
 
