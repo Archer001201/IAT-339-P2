@@ -61,23 +61,53 @@
     <div class="slide_window right_side">
       <h3>Your Cart</h3>
       <!-- <section id="Checkout_Summary"> -->
-        <div class="product_card cart_product horizontal">
-          <img src="../../imgs/Group_15_2.png" alt="AMOUR Heart Dancing Diamond Necklace" width="400" height="235">
-          <div>
-              <p><strong>AMOUR</strong></p>
-              <p><strong>$194.00</strong></p>
-              <div class="edit_order">
-                  <div class="nav_button vertical">
-                      <a href="#" class="nav_main_button">Edit</a>
-                      <a href="#" class="nav_main_button">Save for later</a>
-                  </div>
-                  <div class="quantity_input">
-                      <label for="Quantity_Heart">Quantity</label>
-                      <input type="number" id="Quantity_Heart" class="user_input quantity">
-                  </div>
-              </div>
+      <div class="product_card cart_product horizontal">
+        <img src="../../imgs/Group_15_2.png" alt="AMOUR Heart Dancing Diamond Necklace" width="400" height="235">
+        <div>
+          <div class="name_price">
+            <p><strong>ATLAS</strong></p>
+            <p><strong>$194.00</strong></p>
+          </div>
+
+          <div class="number-input">
+            <button id="decrement_atlas_cart" class="decrement">-</button>
+            <input type="text" id="number_atlas_cart" value="0" readonly/>
+            <button id="increment_atlas_cart" class="increment">+</button>
+          </div>   
+
+          <div class="edit_order">
+            <div class="edit_button">
+              <a href="#" class="nav_main_button">SAVE FOR LATER</a>
+              <a href="#" class="nav_main_button">EDIT</a>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="product_card cart_product horizontal">
+        <img src="../../imgs/Juniper_li.png" alt="AMOUR Heart Dancing Diamond Necklace" width="400" height="235">
+        <div>
+          <div class="name_price">
+            <p><strong>JUNIPER</strong></p>
+            <p><strong>$194.00</strong></p>
+          </div>
+
+          <div class="number-input">
+            <button id="decrement_juniper_cart" class="decrement">-</button>
+            <input type="text" id="number_juniper_cart" value="0" readonly/>
+            <button id="increment_juniper_cart" class="increment">+</button>
+          </div>      
+
+          <div class="edit_order">
+            <div class="edit_button">
+              <a href="#" class="nav_main_button">SAVE FOR LATER</a>
+              <a href="#" class="nav_main_button">EDIT</a>
+             
+            </div>
+            
+          </div>
+        </div>
+      </div>
 
       <!-- </section> -->
       <a href="../../html/ather/checkout.html" class="box_button">checkout</a>

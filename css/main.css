@@ -766,6 +766,8 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 150px; /* 可以根据需要调整 */
+    /* align-items: stretch; */
+    /* border: 1px solid red; */
 }
 
 .decrement,
@@ -774,7 +776,9 @@ nav{
 }
 
 #number_juniper,
-#number_atlas{
+#number_atlas,
+#number_juniper_cart,
+#number_atlas_cart{
     text-align: center;
     width: calc(100% - 60px); /* 减去两边按钮的宽度 */
 }

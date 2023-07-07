@@ -119,7 +119,8 @@ MORE DETAILS
 Three adjustment rings: 38, 40, 42 cm
 The carats, the number of stones and the metal weight are given as an indication. Non-contractual values */
 
-input {
+form#number_atlas_cart,
+form#number_juniper_cart input {
     margin-top: 0.5rem;
     /* margin-left: 5rem;
     margin-bottom: 5rem; */

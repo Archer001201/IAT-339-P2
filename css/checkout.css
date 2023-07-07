@@ -79,6 +79,20 @@
     justify-content: space-between;
     max-width: 300px;
     min-width: 200px;
+    /* border: 1px solid red; */
+}
+
+.cart_product .name_price{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cart_product .edit_button{
+    margin-top: 1rem;
+}
+
+.right_side .box_button{
+    margin-top: 3rem;
 }
 
 
