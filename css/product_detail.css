@@ -53,6 +53,14 @@
     padding-top: 40vw; /* 根据轮播图的高度来调整 */
   }
 
+  .carousel-image {
+    display: none;
+  }
+  
+  .large-screen {
+    display: block;
+  }
+
 /* Detail Description Part Style */
 
 .body_container {
@@ -156,4 +164,20 @@ form#number_juniper_cart input {
         margin: auto;
         /* border: 1px solid red; */
     }
+
+    .large-screen {
+        display: none;
+      }
+      
+      .small-screen {
+        display: block;
+      }
+
+      .text-after-carousel {
+        padding-top: 59vw; /* 根据轮播图的高度来调整 */
+      }
+
+      .body_container{
+        padding-bottom: 3rem;
+      }
 }

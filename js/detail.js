@@ -7,11 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 // -------------------------------------------------------
-const images = document.querySelectorAll('.carousel-image');
+const largeImages = document.querySelectorAll('.carousel-image.large-screen');
+const smallImages = document.querySelectorAll('.carousel-image.small-screen');
 const buttons = document.querySelectorAll('.dot');
 
 function updateCarousel(imageIndex) {
-  images.forEach((image, index) => {
+  largeImages.forEach((image, index) => {
+    if (index === imageIndex) {
+      image.classList.add('active');
+    } else {
+      image.classList.remove('active');
+    }
+  });
+
+  smallImages.forEach((image, index) => {
     if (index === imageIndex) {
       image.classList.add('active');
     } else {
