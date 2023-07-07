@@ -762,6 +762,24 @@ nav{
 }
 /* text input end*/
 
+.number-input {
+    display: flex;
+    justify-content: space-between;
+    width: 150px; /* 可以根据需要调整 */
+}
+
+.decrement,
+.increment {
+    width: 25px; /* 可以根据需要调整 */
+}
+
+#number_juniper,
+#number_atlas{
+    text-align: center;
+    width: calc(100% - 60px); /* 减去两边按钮的宽度 */
+}
+
+
 
 /* Radio Buttons start*/
 input[type="radio"]{
