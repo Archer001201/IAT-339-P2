@@ -208,7 +208,7 @@ cart.addEventListener('click', function(event){
 
 $(document).ready(function(){
   $(".small_link a").hover(function(){
-    $(".small_link a").not(this).css("color", "rgb(180, 180, 180)");
+    $(".small_link a").not(this).css("color", "rgb(255,255,255)");
   }, function(){
     $(".small_link a").css("color", "black");
   });
