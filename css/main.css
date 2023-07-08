@@ -166,7 +166,6 @@ header {
     /* border:1px solid blue; */
 }
 
-
 .new_text_content {
     display: block;
     /* align-items: left; */
@@ -175,6 +174,11 @@ header {
     /* height: auto; */
     margin: auto;
     /* border: 1px solid black; */
+}
+
+.new_text_content a{
+    text-decoration: none;
+    color: black;
 }
 
 .new_text_content img {
@@ -200,6 +204,7 @@ header {
 
 .detail_clusters {
     margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 .half_hundred_picture {
