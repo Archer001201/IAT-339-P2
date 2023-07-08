@@ -62,7 +62,7 @@
 }
 
 .name_price{
-    width: 17.5vw;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     min-width: 200px;
@@ -75,7 +75,7 @@
 .edit_button{
     margin-top: 2rem;
     display: flex;
-    width: 17.5vw;
+    width: 200px;
     justify-content: space-between;
     max-width: 300px;
     min-width: 200px;
