@@ -1,11 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var dropdownToggle = document.querySelector('.dropdown_toggle');
-    var dropdownMenu = document.querySelector('.dropdown_infor');
-  
-    dropdownToggle.addEventListener('click', function() {
-      dropdownMenu.classList.toggle('collapsed');
-    });
-  });
+
+// detail dropdown
+
+// 获取相关元素
+const dropdownToggle = document.querySelector('.dropdown_toggle');
+const dropdownInfor = document.querySelector('.dropdown_infor');
+
+// 添加点击事件监听器
+dropdownToggle.addEventListener('click', function() {
+  // 切换详情部分的显示与隐藏
+  dropdownInfor.classList.toggle('active');
+});
+
 // -------------------------------------------------------
 const largeImages = document.querySelectorAll('.carousel-image.large-screen');
 const smallImages = document.querySelectorAll('.carousel-image.small-screen');
