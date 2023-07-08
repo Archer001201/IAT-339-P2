@@ -989,7 +989,7 @@ input[type="radio"]:focus {
 
 @media only screen and (max-width: 980px) {
     .half_hundred_picture {
-        width: 60%;
+        width: 100%;
         height: auto;
         margin: auto;
     }
@@ -1056,7 +1056,7 @@ input[type="radio"]:focus {
 
 @media only screen and (max-width: 980px) {
     .half_hundred_picture {
-        width: 80%;
+        width: 100%;
     }
 
     .new_text_content {
