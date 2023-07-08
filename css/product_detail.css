@@ -107,14 +107,15 @@
 
 .dropdown_infor {
     /* display: none; */
-    max-height: 0;
+    max-height: 1000px;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease;
 }
 
 .dropdown_infor.active {
     /* display: block; */
-    max-height: 1000px;
+    max-height: 0px;
+    overflow: hidden;
     /* 设置一个足够大的值以展开内容 */
     transition: max-height 0.5s ease;
 }
