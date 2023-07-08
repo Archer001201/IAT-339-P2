@@ -2,14 +2,19 @@
 // detail dropdown
 
 // 获取相关元素
-const dropdownToggle = document.querySelector('.dropdown_toggle');
-const dropdownInfor = document.querySelector('.dropdown_infor');
+const toggleButton = document.querySelector('.dropdown_toggle');
+const dropdownInfo = document.querySelector('.dropdown_infor');
+const plusIcon = document.querySelector('.plus_icon');
+const minusIcon = document.querySelector('.minus_icon');
 
-// 添加点击事件监听器
-dropdownToggle.addEventListener('click', function() {
-  // 切换详情部分的显示与隐藏
-  dropdownInfor.classList.toggle('active');
+toggleButton.addEventListener('click', function() {
+  // 切换类名
+  toggleButton.classList.toggle('active');
+  dropdownInfo.classList.toggle('active');
+  plusIcon.style.display = toggleButton.classList.contains('active') ? 'none' : 'block';
+  minusIcon.style.display = toggleButton.classList.contains('active') ? 'block' : 'none';
 });
+
 
 // -------------------------------------------------------
 const largeImages = document.querySelectorAll('.carousel-image.large-screen');

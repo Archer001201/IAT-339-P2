@@ -77,7 +77,7 @@
 
 .product_detail_text {
     margin: 5rem 0;
-    width:40%;
+    width: 40%;
     margin-bottom: 5rem;
     /* border: 1px solid red; */
 }
@@ -144,6 +144,8 @@
     position: relative;
     /* border: 1px solid blue; */
     transform: translate(0, 50%);
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .plus_icon span {
@@ -167,6 +169,21 @@
     transform: translate(-50%, -50%);
 }
 
+.minus_icon {
+    width: 25px;
+    height: 2px;
+    position: relative;
+    /* border: 1px solid blue; */
+    transform: translate(-50%, 2rem);
+    display: block;
+    background-color: black;
+    /* width: 60%;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: none;
+}
 /* .product_detail_drrop_down .dropdown_icon {
     margin-left: 5px;
     transition: transform 0.3s ease-in-out;
@@ -181,6 +198,27 @@ form#number_atlas_cart,
 form#number_juniper_cart input {
     margin-top: 0.5rem;
 } */
+
+@media only screen and (max-width: 1000px) {
+    .body_container {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .product_detail_text {
+        width: 90%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    .product_detail_drrop_down{
+        width: 90%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     .product_detail_text {
