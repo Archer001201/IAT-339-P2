@@ -9,8 +9,8 @@ const minusIcon = document.querySelector('.minus_icon');
 
 toggleButton.addEventListener('click', function() {
   // 切换类名
-  toggleButton.classList.toggle('active');
   dropdownInfo.classList.toggle('active');
+  toggleButton.classList.toggle('active');
   plusIcon.style.display = toggleButton.classList.contains('active') ? 'none' : 'block';
   minusIcon.style.display = toggleButton.classList.contains('active') ? 'block' : 'none';
 });
