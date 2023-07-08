@@ -58,6 +58,11 @@
     /* 根据轮播图的高度来调整 */
 }
 
+.after-carousel {
+    padding-top: 35vw;
+    /* 根据轮播图的高度来调整 */
+}
+
 .carousel-image {
     display: none;
 }
@@ -241,11 +246,21 @@ form#number_juniper_cart input {
         display: block;
     }
 
-    .text-after-carousel {
+    /* .text-after-carousel {
         padding-top: 59vw;
-    }
+    } */
 
     .body_container {
         padding-bottom: 3rem;
+    }
+
+    .after-carousel {
+        padding-top: 60vw;
+        /* 根据轮播图的高度来调整 */
+    }
+
+    .text-after-carousel {
+        padding-top: 80vw;
+        /* 根据轮播图的高度来调整 */
     }
 }
