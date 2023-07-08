@@ -1,14 +1,12 @@
 
 // detail dropdown
 
-// 获取相关元素
 const toggleButton = document.querySelector('.dropdown_toggle');
 const dropdownInfo = document.querySelector('.dropdown_infor');
 // const plusIcon = document.querySelector('.plus_icon');
 const minusIcon = document.querySelector('.add_icon_vertical');
 
 toggleButton.addEventListener('click', function() {
-  // 切换类名
   dropdownInfo.classList.toggle('active');
   toggleButton.classList.toggle('active');
   // plusIcon.style.display = toggleButton.classList.contains('active') ? 'none' : 'block';
@@ -45,5 +43,4 @@ buttons.forEach((button, index) => {
   });
 });
 
-// 设置初始图片
 updateCarousel(0);
