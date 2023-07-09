@@ -215,7 +215,7 @@ header {
 }
 
 .event_showcase {
-    background-image: url("/imgs/event_img.png");
+    background-image: url("../imgs/event_img.png");
     background-size: cover;
     background-position: center;
     padding: 10rem 0;
