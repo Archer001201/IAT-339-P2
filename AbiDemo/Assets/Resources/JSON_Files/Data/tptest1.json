@@ -1,0 +1,29 @@
+{
+  "dialogueEventSetID" : "TP001",
+  "character" : "",
+  "mainEvent" : false,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "001",
+
+      "dialogues" : [
+        {
+          "name" : "",
+          "content" : "Where to go?"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "Home",
+          "nextDialogueEventID" : ""
+        },
+
+        {
+          "optionContent" : "testScene3",
+          "nextDialogueEventID" : ""
+        }
+      ]
+    }
+  ]
+}

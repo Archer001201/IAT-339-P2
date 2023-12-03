@@ -1,0 +1,28 @@
+{
+  "dialogueEventSetID" : "TP_HW2001",
+  "character" : "",
+  "mainEvent" : false,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "D001",
+
+      "dialogues" : [
+        {
+          "name" : "",
+          "content" : "Through the window on the office door, you can see a beautiful girl standing next to Mr. Anderson."
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "Office",
+          "nextDialogueEventID" : ""
+        },
+        {
+          "optionContent" : "Cancel",
+          "nextDialogueEventID" : ""
+        }
+      ]
+    }
+  ]
+}

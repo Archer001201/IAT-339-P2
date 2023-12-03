@@ -1,0 +1,122 @@
+{
+  "dialogueEventSetID" : "000",
+  "character" : "Teacher",
+  "mainEvent" : true,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "001",
+
+      "dialogues" : [
+        {
+          "name" : "Vincent",
+          "content" : "this is test2"
+        },
+
+        {
+          "name" : "Yvonne",
+          "content" : "test2 dialogue"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "test 2 option 1",
+          "nextDialogueEventID" : "002A"
+        },
+
+        {
+          "optionContent" : "test 2 option 2",
+          "nextDialogueEventID" : "002B",
+          "effect" : [1,1,1]
+        }
+      ]
+    },
+    
+    {
+      "dialogueEventID" : "002A",
+
+      "dialogues" : [
+        {
+          "name" : "Vincent",
+          "content" : "This is 002A"
+        },
+
+        {
+          "name" : "Yvonne",
+          "content" : "Good 002A"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "option A",
+          "nextDialogueEventID" : "003A"
+        },
+
+        {
+          "optionContent" : "option B",
+          "nextDialogueEventID" : "003B"
+        }
+      ]
+    },
+    
+    {
+      "dialogueEventID" : "002B",
+
+      "dialogues" : [
+        {
+          "name" : "Vincent",
+          "content" : "This is 002B"
+        },
+
+        {
+          "name" : "Yvonne",
+          "content" : "Good 002B"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "option A",
+          "nextDialogueEventID" : "003A"
+        }
+      ]
+    },
+
+    {
+      "dialogueEventID" : "003A",
+
+      "dialogues" : [
+        {
+          "name" : "Vincent",
+          "content" : "This is 003A"
+        },
+
+        {
+          "name" : "Yvonne",
+          "content" : "Good 003A"
+        }
+      ],
+
+      "options" : []
+    },
+
+    {
+      "dialogueEventID" : "003B",
+
+      "dialogues" : [
+        {
+          "name" : "Vincent",
+          "content" : "This is 003B"
+        },
+
+        {
+          "name" : "Yvonne",
+          "content" : "Good 003B"
+        }
+      ],
+
+      "options" : []
+    }
+  ]
+}

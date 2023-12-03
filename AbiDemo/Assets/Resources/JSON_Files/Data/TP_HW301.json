@@ -1,0 +1,32 @@
+{
+  "dialogueEventSetID" : "TP_HW301",
+  "character" : "",
+  "mainEvent" : false,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "D001",
+
+      "dialogues" : [
+        {
+          "name" : "",
+          "content" : "Where to go?"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "Playground",
+          "nextDialogueEventID" : ""
+        },
+        {
+          "optionContent" : "Library",
+          "nextDialogueEventID" : ""
+        },
+        {
+          "optionContent" : "Cancel",
+          "nextDialogueEventID" : ""
+        }
+      ]
+    }
+  ]
+}

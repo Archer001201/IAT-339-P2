@@ -1,0 +1,41 @@
+{
+  "dialogueEventSetID" : "E013",
+  "character" : "Teacher",
+  "mainEvent" : true,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "D001",
+
+      "dialogues" : [
+        {
+          "name" : "Teacher",
+          "content" : "Hi Vincent! The results are out, how do you feel?"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "Upset",
+          "nextDialogueEventID" : "D002",
+          "effect" : [2,0,0]
+        }
+      ]
+    },
+    {
+      "dialogueEventID" : "D002",
+
+      "dialogues" : [
+        {
+          "name" : "Vincent",
+          "content" : "I feel like I've hit a bottleneck in my studies….."
+        },
+        {
+          "name" : "Teacher",
+          "content" : "While there hasn't been any regression, there hasn't been progress either. You still need to strive harder to reach your goal."
+        }
+      ],
+
+      "options" : []
+    }
+  ]
+}

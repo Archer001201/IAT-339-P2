@@ -1,0 +1,42 @@
+{
+  "dialogueEventSetID" : "E001",
+  "character" : "Bad Guy",
+  "mainEvent" : false,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "D001",
+
+      "dialogues" : [
+        {
+          "name" : "Bad Guy",
+          "content" : "This is a test"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "Yes",
+          "nextDialogueEventID" : "D002",
+          "effect" : [1,0,0]
+        },
+        {
+          "optionContent" : "No",
+          "nextDialogueEventID" : "D002",
+          "effect" : [1,0,0]
+        }
+      ]
+    },
+    {
+      "dialogueEventID" : "D002",
+
+      "dialogues" : [
+        {
+          "name" : "Bad Guy",
+          "content" : "Test End;"
+        }
+      ],
+
+      "options" : []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dialogueEventSetID" : "TP_CLSR001",
+  "character" : "",
+  "mainEvent" : false,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "D001",
+
+      "dialogues" : [
+        {
+          "name" : "",
+          "content" : "Last night, there were a few math problems I simply couldn't solve. I need to go ask Mr. Anderson for help."
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "Hallway",
+          "nextDialogueEventID" : ""
+        },
+        {
+          "optionContent" : "Cancel",
+          "nextDialogueEventID" : ""
+        }
+      ]
+    }
+  ]
+}

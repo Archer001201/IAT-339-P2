@@ -1,0 +1,32 @@
+{
+  "dialogueEventSetID" : "TP_LBRY001",
+  "character" : "",
+  "mainEvent" : false,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "D001",
+
+      "dialogues" : [
+        {
+          "name" : "",
+          "content" : "Where to go?"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "Hallway",
+          "nextDialogueEventID" : ""
+        },
+        {
+          "optionContent" : "Playground",
+          "nextDialogueEventID" : ""
+        },
+        {
+          "optionContent" : "Cancel",
+          "nextDialogueEventID" : ""
+        }
+      ]
+    }
+  ]
+}

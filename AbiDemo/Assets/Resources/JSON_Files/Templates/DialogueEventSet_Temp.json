@@ -1,0 +1,70 @@
+{
+  "dialogueEventSetID" : "E001",
+  "character" : "NPC Name",
+  "mainEvent" : true,
+  "dialogueEvents" : [
+    {
+      "dialogueEventID" : "D001",
+      "dialogues" : [
+        {
+          "name" : "npc",
+          "content" : "content"
+        },
+        {
+          "name" : "player",
+          "content" : "content"
+        },
+        {
+          "name" : "npc",
+          "content" : "content"
+        }
+      ],
+      "options" : [
+        {
+          "optionContent" : "option A",
+          "nextDialogueEventID" : "D002",
+          "effect" : [1,1,1]
+        },
+        {
+          "optionContent" : "option B",
+          "nextDialogueEventID" : "D003"
+        }
+      ]
+    },
+    
+    {
+      "dialogueEventID" : "D002",
+      "dialogues" : [
+        {
+          "name" : "npc",
+          "content" : "content"
+        },
+        {
+          "name" : "player",
+          "content" : "content"
+        },
+        {
+          "name" : "npc",
+          "content" : "content"
+        }
+      ],
+
+      "options" : [
+        {
+          "optionContent" : "option content",
+          "nextDialogueEventID" : "D002"
+        },
+
+        {
+          "optionContent" : "option content",
+          "nextDialogueEventID" : "D002"
+        },
+
+        {
+          "optionContent" : "option content",
+          "nextDialogueEventID" : "D002"
+        }
+      ]
+    }
+  ]
+}
